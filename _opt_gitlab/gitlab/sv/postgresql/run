@@ -1,0 +1,4 @@
+#!/bin/sh
+exec 2>&1
+
+exec chpst -P -U gitlab-psql:gitlab-psql -u gitlab-psql:gitlab-psql /opt/gitlab/embedded/bin/postgres -D /var/opt/gitlab/postgresql/data

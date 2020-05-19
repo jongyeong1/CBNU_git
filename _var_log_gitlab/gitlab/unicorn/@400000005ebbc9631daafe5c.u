@@ -1,0 +1,132 @@
+2020-05-06_17:01:37.41993 starting new unicorn master
+2020-05-06_17:03:32.25908 master failed to start, check stderr log for details
+2020-05-06_17:03:33.26423 failed to start a new unicorn master
+2020-05-06_17:03:33.27999 starting new unicorn master
+2020-05-06_17:04:17.75623 master failed to start, check stderr log for details
+2020-05-06_17:04:18.76140 failed to start a new unicorn master
+2020-05-06_17:04:18.77655 starting new unicorn master
+2020-05-06_17:05:04.07596 master failed to start, check stderr log for details
+2020-05-06_17:05:05.08343 failed to start a new unicorn master
+2020-05-06_17:05:05.09747 starting new unicorn master
+2020-05-06_17:05:52.84360 master failed to start, check stderr log for details
+2020-05-06_17:05:53.84867 failed to start a new unicorn master
+2020-05-06_17:05:53.86351 starting new unicorn master
+2020-05-06_17:06:39.53505 master failed to start, check stderr log for details
+2020-05-06_17:06:40.54130 failed to start a new unicorn master
+2020-05-06_17:06:40.55530 starting new unicorn master
+2020-05-06_17:07:25.32673 master failed to start, check stderr log for details
+2020-05-06_17:07:26.33132 failed to start a new unicorn master
+2020-05-06_17:07:26.34629 starting new unicorn master
+2020-05-06_17:08:10.49372 master failed to start, check stderr log for details
+2020-05-06_17:08:11.49879 failed to start a new unicorn master
+2020-05-06_17:08:11.51344 starting new unicorn master
+2020-05-06_17:08:55.41420 master failed to start, check stderr log for details
+2020-05-06_17:08:56.41982 failed to start a new unicorn master
+2020-05-06_17:08:56.43429 starting new unicorn master
+2020-05-06_17:09:41.45909 master failed to start, check stderr log for details
+2020-05-06_17:09:42.46496 failed to start a new unicorn master
+2020-05-06_17:09:42.48030 starting new unicorn master
+2020-05-06_17:10:27.07690 master failed to start, check stderr log for details
+2020-05-06_17:10:28.08042 failed to start a new unicorn master
+2020-05-06_17:10:28.09607 starting new unicorn master
+2020-05-06_17:11:12.39717 master failed to start, check stderr log for details
+2020-05-06_17:11:13.40155 failed to start a new unicorn master
+2020-05-06_17:11:13.41583 starting new unicorn master
+2020-05-06_17:11:57.45600 master failed to start, check stderr log for details
+2020-05-06_17:11:58.46195 failed to start a new unicorn master
+2020-05-06_17:11:58.47724 starting new unicorn master
+2020-05-06_17:12:43.64452 master failed to start, check stderr log for details
+2020-05-06_17:12:44.64956 failed to start a new unicorn master
+2020-05-06_17:12:44.66429 starting new unicorn master
+2020-05-06_17:13:29.57704 master failed to start, check stderr log for details
+2020-05-06_17:13:30.58273 failed to start a new unicorn master
+2020-05-06_17:13:30.59825 starting new unicorn master
+2020-05-06_17:14:15.11110 master failed to start, check stderr log for details
+2020-05-06_17:14:16.11615 failed to start a new unicorn master
+2020-05-06_17:14:16.13100 starting new unicorn master
+2020-05-06_17:15:00.60339 master failed to start, check stderr log for details
+2020-05-06_17:15:01.60725 failed to start a new unicorn master
+2020-05-06_17:15:01.62197 starting new unicorn master
+2020-05-06_17:15:46.78703 master failed to start, check stderr log for details
+2020-05-06_17:15:47.79724 failed to start a new unicorn master
+2020-05-06_17:15:47.81104 starting new unicorn master
+2020-05-06_17:16:32.35108 master failed to start, check stderr log for details
+2020-05-06_17:16:33.35631 failed to start a new unicorn master
+2020-05-06_17:16:33.37117 starting new unicorn master
+2020-05-06_17:17:23.28411 master failed to start, check stderr log for details
+2020-05-06_17:17:24.29967 failed to start a new unicorn master
+2020-05-06_17:17:24.34742 starting new unicorn master
+2020-05-06_08:18:15.77835 master failed to start, check stderr log for details
+2020-05-06_08:18:16.86163 failed to start a new unicorn master
+2020-05-06_08:18:17.95947 starting new unicorn master
+2020-05-06_08:19:05.33893 master failed to start, check stderr log for details
+2020-05-06_08:19:06.34254 failed to start a new unicorn master
+2020-05-06_08:19:06.35789 starting new unicorn master
+2020-05-06_08:19:52.22662 master failed to start, check stderr log for details
+2020-05-06_08:19:53.24008 failed to start a new unicorn master
+2020-05-06_08:19:53.25873 starting new unicorn master
+2020-05-06_08:20:41.39841 master failed to start, check stderr log for details
+2020-05-06_08:20:42.41377 failed to start a new unicorn master
+2020-05-06_08:20:42.42962 starting new unicorn master
+2020-05-06_08:21:29.25400 master failed to start, check stderr log for details
+2020-05-06_08:21:30.26368 failed to start a new unicorn master
+2020-05-06_08:21:30.27900 starting new unicorn master
+2020-05-06_08:22:18.18724 master failed to start, check stderr log for details
+2020-05-06_08:22:19.20383 failed to start a new unicorn master
+2020-05-06_08:22:19.21831 starting new unicorn master
+2020-05-06_08:22:25.65876 Received TERM from runit, sending to process group (-PID)
+2020-05-06_08:22:25.70132 adopted existing unicorn master 17801
+2020-05-06_08:23:13.93598 wrapper for unicorn master 17801 exiting
+2020-05-06_08:23:13.95212 starting new unicorn master
+2020-05-06_08:24:01.29127 master failed to start, check stderr log for details
+2020-05-06_08:24:02.29681 failed to start a new unicorn master
+2020-05-06_08:24:02.31850 starting new unicorn master
+2020-05-06_08:24:47.02643 master failed to start, check stderr log for details
+2020-05-06_08:24:48.03149 failed to start a new unicorn master
+2020-05-06_08:24:48.04634 starting new unicorn master
+2020-05-06_08:25:33.15572 master failed to start, check stderr log for details
+2020-05-06_08:25:34.15957 failed to start a new unicorn master
+2020-05-06_08:25:34.17527 starting new unicorn master
+2020-05-06_08:25:55.32327 adopted existing unicorn master 19132
+2020-05-06_08:26:26.47824 master failed to start, check stderr log for details
+2020-05-06_08:26:26.63498 wrapper for unicorn master 19132 exiting
+2020-05-06_08:26:26.67534 starting new unicorn master
+2020-05-06_08:27:18.14888 master failed to start, check stderr log for details
+2020-05-06_08:27:19.15207 failed to start a new unicorn master
+2020-05-06_08:27:19.16896 starting new unicorn master
+2020-05-06_08:28:06.52830 master failed to start, check stderr log for details
+2020-05-06_08:28:07.53323 failed to start a new unicorn master
+2020-05-06_08:28:07.54832 starting new unicorn master
+2020-05-06_08:28:54.90542 master failed to start, check stderr log for details
+2020-05-06_08:28:55.91124 failed to start a new unicorn master
+2020-05-06_08:28:55.92575 starting new unicorn master
+2020-05-06_08:29:22.59001 master failed to start, check stderr log for details
+2020-05-06_08:29:23.59704 failed to start a new unicorn master
+2020-05-06_08:29:23.61162 starting new unicorn master
+2020-05-06_08:29:25.10294 Received TERM from runit, sending to process group (-PID)
+2020-05-06_08:29:25.13902 adopted existing unicorn master 20687
+2020-05-06_08:30:15.36236 wrapper for unicorn master 20687 exiting
+2020-05-06_08:30:15.37811 starting new unicorn master
+2020-05-06_08:31:05.13782 master failed to start, check stderr log for details
+2020-05-06_08:31:06.14424 failed to start a new unicorn master
+2020-05-06_08:31:06.15986 starting new unicorn master
+2020-05-06_08:31:51.07547 master failed to start, check stderr log for details
+2020-05-06_08:31:52.08479 failed to start a new unicorn master
+2020-05-06_08:31:52.09983 starting new unicorn master
+2020-05-06_08:32:39.70813 master failed to start, check stderr log for details
+2020-05-06_08:32:40.71404 failed to start a new unicorn master
+2020-05-06_08:32:40.72937 starting new unicorn master
+2020-05-06_08:33:25.30128 master failed to start, check stderr log for details
+2020-05-06_08:33:26.30801 failed to start a new unicorn master
+2020-05-06_08:33:26.32277 starting new unicorn master
+2020-05-06_08:34:12.16989 master failed to start, check stderr log for details
+2020-05-06_08:34:13.17724 failed to start a new unicorn master
+2020-05-06_08:34:13.19184 starting new unicorn master
+2020-05-06_08:35:06.41829 master failed to start, check stderr log for details
+2020-05-06_08:35:07.42355 failed to start a new unicorn master
+2020-05-06_08:35:07.43890 starting new unicorn master
+2020-05-06_08:35:54.77068 adopted existing unicorn master 22162
+2020-05-06_08:35:56.37849 master failed to start, check stderr log for details
+2020-05-06_08:35:56.77663 wrapper for unicorn master 22162 exiting
+2020-05-06_08:35:56.79027 starting new unicorn master
+2020-05-06_08:36:48.06668 adopted new unicorn master 22718

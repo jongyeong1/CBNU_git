@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[110],{2227:function(t,e,n){n(105),t.exports=n(2228)},2228:function(t,e,n){"use strict";n.r(e);var o=n(1247);document.addEventListener("DOMContentLoaded",(function(){var t=document.getElementById("import-projects-mount-element");Object(o.a)(t)}))}},[[2227,1,0,27]]]);
+//# sourceMappingURL=pages.import.github.status.18a3b0e1.chunk.js.map

@@ -1,0 +1,8 @@
+I, [2020-05-13T01:58:43.285Z #13991]  INFO -- : Refreshing Gem list
+I, [2020-05-13T02:00:21.242Z #13991]  INFO -- : listening on addr=127.0.0.1:8080 fd=20
+I, [2020-05-13T02:00:21.242Z #13991]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2020-05-13T02:00:21.242Z #13991]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=21
+I, [2020-05-13T02:00:21.569Z #13991]  INFO -- : master process ready
+I, [2020-05-13T02:00:21.863Z #14838]  INFO -- : worker=0 ready
+I, [2020-05-13T02:00:21.886Z #14840]  INFO -- : worker=2 ready
+I, [2020-05-13T02:00:21.901Z #14839]  INFO -- : worker=1 ready

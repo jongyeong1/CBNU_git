@@ -1,0 +1,24 @@
+{"level":"info","msg":"Wrapper started","time":"2020-04-22T00:08:25Z","wrapper":13967}
+{"level":"info","msg":"finding gitaly","pid_file":"/var/opt/gitlab/gitaly/gitaly.pid","time":"2020-04-22T00:08:25Z","wrapper":13967}
+{"error":"strconv.Atoi: parsing \"\": invalid syntax","level":"error","msg":"find gitaly","time":"2020-04-22T00:08:25Z","wrapper":13967}
+{"level":"info","msg":"spawning a process","time":"2020-04-22T00:08:25Z","wrapper":13967}
+{"gitaly":14086,"level":"info","msg":"monitoring gitaly","time":"2020-04-22T00:08:25Z","wrapper":13967}
+time="2020-04-22T00:08:28Z" level=info msg="Starting Gitaly" version="Gitaly, version 12.9.3"
+time="2020-04-22T00:08:29Z" level=warning msg="git path not configured. Using default path resolution" resolvedPath=/opt/gitlab/embedded/bin/git
+time="2020-04-22T00:08:29Z" level=info msg="clearing disk cache object folder" path=/var/opt/gitlab/git-data/repositories
+time="2020-04-22T00:08:29Z" level=info msg="moving disk cache object folder to /var/opt/gitlab/git-data/repositories/+gitaly/tmp/diskcache063946828" path=/var/opt/gitlab/git-data/repositories
+time="2020-04-22T00:08:29Z" level=info msg="disk cache object folder doesn't exist, no need to remove" path=/var/opt/gitlab/git-data/repositories
+time="2020-04-22T00:08:29Z" level=info msg="Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/cache" path=/var/opt/gitlab/git-data/repositories/+gitaly/cache
+time="2020-04-22T00:08:29Z" level=info msg="Starting file walker for /var/opt/gitlab/git-data/repositories/+gitaly/state" path=/var/opt/gitlab/git-data/repositories/+gitaly/state
+{"address":"/var/opt/gitlab/gitaly/gitaly.socket","level":"info","msg":"listening at unix address","time":"2020-04-22T00:09:04.602Z"}
+{"address":"/var/opt/gitlab/gitaly/internal_sockets/internal.sock","level":"info","msg":"listening at unix address","time":"2020-04-22T00:09:04.602Z"}
+{"level":"info","msg":"finished tempdir cleaner walk","storage":"default","time":"2020-04-22T00:09:04.602Z","time_ms":0}
+{"address":"localhost:9236","level":"info","msg":"starting prometheus listener","time":"2020-04-22T00:09:05.461Z"}
+{"level":"info","msg":"starting RSS monitor","supervisor.name":"gitaly-ruby.0","supervisor.rss_threshold":209715200,"time":"2020-04-22T00:09:05.462Z"}
+{"level":"info","msg":"starting RSS monitor","supervisor.name":"gitaly-ruby.1","supervisor.rss_threshold":209715200,"time":"2020-04-22T00:09:05.462Z"}
+{"level":"warning","msg":"spawned","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","14086","/var/opt/gitlab/gitaly/internal_sockets/ruby.0"],"supervisor.name":"gitaly-ruby.0","supervisor.pid":14855,"time":"2020-04-22T00:09:05.462Z"}
+{"level":"warning","msg":"spawned","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","14086","/var/opt/gitlab/gitaly/internal_sockets/ruby.1"],"supervisor.name":"gitaly-ruby.1","supervisor.pid":14858,"time":"2020-04-22T00:09:05.466Z"}
+{"level":"info","msg":"PID 14855 BUNDLE_GEMFILE=/opt/gitlab/embedded/service/gitaly-ruby/Gemfile","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","14086","/var/opt/gitlab/gitaly/internal_sockets/ruby.0"],"supervisor.name":"gitaly-ruby.0","time":"2020-04-22T00:09:07.157Z"}
+{"level":"info","msg":"PID 14858 BUNDLE_GEMFILE=/opt/gitlab/embedded/service/gitaly-ruby/Gemfile","supervisor.args":["bundle","exec","bin/ruby-cd","/var/opt/gitlab/gitaly","/opt/gitlab/embedded/service/gitaly-ruby/bin/gitaly-ruby","14086","/var/opt/gitlab/gitaly/internal_sockets/ruby.1"],"supervisor.name":"gitaly-ruby.1","time":"2020-04-22T00:09:07.16Z"}
+{"correlation_id":"eb788ed98e5ddb60e717003ffb061025","grpc.code":"OK","grpc.meta.auth_version":"v2","grpc.meta.client_name":"gitlab-sidekiq","grpc.meta.deadline_type":"unknown","grpc.method":"Check","grpc.request.deadline":"2020-04-22T00:20:24Z","grpc.request.fullMethod":"/grpc.health.v1.Health/Check","grpc.service":"grpc.health.v1.Health","grpc.start_time":"2020-04-22T00:20:14Z","grpc.time_ms":0.065,"level":"info","msg":"finished unary call with code OK","peer.address":"@","pid":14086,"span.kind":"server","system":"grpc","time":"2020-04-22T00:20:14.018Z"}
+{"correlation_id":"39686c6e89d711189a058aad01e69574","grpc.code":"OK","grpc.meta.auth_version":"v2","grpc.meta.client_name":"gitlab-sidekiq","grpc.meta.deadline_type":"unknown","grpc.method":"Check","grpc.request.deadline":"2020-04-22T01:20:16Z","grpc.request.fullMethod":"/grpc.health.v1.Health/Check","grpc.service":"grpc.health.v1.Health","grpc.start_time":"2020-04-22T01:20:06Z","grpc.time_ms":0.042,"level":"info","msg":"finished unary call with code OK","peer.address":"@","pid":14086,"span.kind":"server","system":"grpc","time":"2020-04-22T01:20:06.007Z"}

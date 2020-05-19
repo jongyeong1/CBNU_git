@@ -1,0 +1,10 @@
+#!/bin/sh
+exec 2>&1
+
+cd /var/opt/gitlab/logrotate
+
+exec /opt/gitlab/embedded/bin/chpst -P /usr/bin/env \
+  dir=/var/opt/gitlab/logrotate \
+  pre_sleep=600 \
+  post_sleep=3000 \
+  /opt/gitlab/embedded/bin/gitlab-logrotate-wrapper

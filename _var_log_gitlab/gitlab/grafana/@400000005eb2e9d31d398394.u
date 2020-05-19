@@ -1,0 +1,445 @@
+2020-05-02_15:18:22.35697 t=2020-05-03T00:18:22+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_15:18:22.35704 t=2020-05-03T00:18:22+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_15:18:22.35704 t=2020-05-03T00:18:22+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_15:18:22.35704 t=2020-05-03T00:18:22+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_15:18:22.35705 t=2020-05-03T00:18:22+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_15:18:22.35705 t=2020-05-03T00:18:22+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_15:18:22.35705 t=2020-05-03T00:18:22+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_15:18:22.35706 t=2020-05-03T00:18:22+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_15:18:22.35707 t=2020-05-03T00:18:22+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_15:18:22.35759 t=2020-05-03T00:18:22+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_15:18:22.35774 t=2020-05-03T00:18:22+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_15:18:22.35809 t=2020-05-03T00:18:22+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_15:18:23.44162 t=2020-05-03T00:18:23+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_15:18:23.82958 t=2020-05-03T00:18:23+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_15:18:23.82959 t=2020-05-03T00:18:23+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_15:18:23.82960 t=2020-05-03T00:18:23+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_15:18:23.82960 t=2020-05-03T00:18:23+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_15:18:23.82961 t=2020-05-03T00:18:23+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_15:18:26.02810 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_15:18:26.02811 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_15:18:26.02811 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_15:18:26.02812 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_15:18:26.02813 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_15:18:26.02813 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_15:18:26.02814 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_15:18:26.02815 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_15:18:26.02817 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_15:18:26.02818 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_15:18:26.02819 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_15:18:26.11564 t=2020-05-03T00:18:26+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_15:18:27.86714 t=2020-05-03T00:18:27+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_15:18:27.86715 t=2020-05-03T00:18:27+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_15:38:40.94790 t=2020-05-03T00:38:40+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_15:38:41.26578 t=2020-05-03T00:38:40+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_15:38:41.26582 t=2020-05-03T00:38:40+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_15:38:41.26583 t=2020-05-03T00:38:40+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_15:38:41.26587 t=2020-05-03T00:38:40+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_15:38:41.26588 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_15:38:41.26588 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_15:38:41.26588 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_15:38:41.26588 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_15:38:41.26589 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_15:38:41.26589 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_15:38:41.26589 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_15:38:41.26590 t=2020-05-03T00:38:41+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_15:38:41.26590 t=2020-05-03T00:38:41+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_15:38:41.43579 t=2020-05-03T00:38:41+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_15:38:41.43581 t=2020-05-03T00:38:41+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_15:38:41.43581 t=2020-05-03T00:38:41+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_15:38:41.43582 t=2020-05-03T00:38:41+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_15:38:41.43582 t=2020-05-03T00:38:41+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_15:38:41.43582 t=2020-05-03T00:38:41+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_15:38:41.43582 t=2020-05-03T00:38:41+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_15:38:41.43584 t=2020-05-03T00:38:41+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_15:38:41.43584 t=2020-05-03T00:38:41+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_15:38:41.43636 t=2020-05-03T00:38:41+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_15:38:41.43637 t=2020-05-03T00:38:41+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_15:38:41.43669 t=2020-05-03T00:38:41+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_15:38:42.48479 t=2020-05-03T00:38:42+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_15:38:42.55026 t=2020-05-03T00:38:42+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_15:38:42.55028 t=2020-05-03T00:38:42+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_15:38:42.55029 t=2020-05-03T00:38:42+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_15:38:42.55030 t=2020-05-03T00:38:42+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_15:38:42.55032 t=2020-05-03T00:38:42+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_15:38:43.88442 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_15:38:43.88444 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_15:38:43.88445 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_15:38:43.88446 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_15:38:43.88448 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_15:38:43.88448 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_15:38:43.88449 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_15:38:43.88453 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_15:38:43.88456 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_15:38:43.88457 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_15:38:43.88460 t=2020-05-03T00:38:43+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_15:38:44.06890 t=2020-05-03T00:38:44+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_15:38:44.23768 t=2020-05-03T00:38:44+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_15:38:44.23769 t=2020-05-03T00:38:44+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_06:45:12.03455 t=2020-05-02T15:45:12+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_06:45:12.03459 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_06:45:12.03497 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_06:45:12.03497 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_06:45:12.03498 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_06:45:12.03498 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_06:45:12.03498 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_06:45:12.03499 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_06:45:12.26043 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_06:45:12.52635 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_06:45:12.52642 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_06:45:12.56847 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_06:45:12.56848 t=2020-05-02T15:45:12+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_06:45:12.56848 t=2020-05-02T15:45:12+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_06:45:15.35502 t=2020-05-02T15:45:15+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_06:45:15.35504 t=2020-05-02T15:45:15+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_06:45:15.35504 t=2020-05-02T15:45:15+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_06:45:15.35504 t=2020-05-02T15:45:15+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_06:45:15.35505 t=2020-05-02T15:45:15+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_06:45:15.35505 t=2020-05-02T15:45:15+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_06:45:15.35505 t=2020-05-02T15:45:15+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_06:45:15.35505 t=2020-05-02T15:45:15+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_06:45:15.35507 t=2020-05-02T15:45:15+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_06:45:15.50428 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_06:45:15.50430 t=2020-05-02T15:45:15+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_06:45:15.50505 t=2020-05-02T15:45:15+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_06:45:15.95024 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_06:45:15.98557 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_06:45:15.98559 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_06:45:15.98559 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_06:45:15.98559 t=2020-05-02T15:45:15+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_06:45:15.98560 t=2020-05-02T15:45:15+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_06:45:16.57218 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_06:45:16.57220 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_06:45:16.57221 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_06:45:16.57222 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_06:45:16.57222 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_06:45:16.57223 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_06:45:16.57224 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_06:45:16.57229 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_06:45:16.57237 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_06:45:16.57238 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_06:45:16.57239 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_06:45:16.94470 t=2020-05-02T15:45:16+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_06:45:19.00985 t=2020-05-02T15:45:19+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_06:45:19.00991 t=2020-05-02T15:45:19+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:00:22.23881 t=2020-05-02T16:00:22+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:00:22.87265 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:00:22.87267 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:00:22.87267 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:00:22.87267 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:00:22.87278 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:00:22.87278 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:00:22.87278 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:00:22.87279 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:00:22.87279 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:00:22.87279 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:00:22.87282 t=2020-05-02T16:00:22+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:00:22.87282 t=2020-05-02T16:00:22+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:00:22.87283 t=2020-05-02T16:00:22+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:00:22.87283 t=2020-05-02T16:00:22+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:00:22.87283 t=2020-05-02T16:00:22+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:00:22.87284 t=2020-05-02T16:00:22+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:00:22.87285 t=2020-05-02T16:00:22+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:00:22.87285 t=2020-05-02T16:00:22+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:00:22.87285 t=2020-05-02T16:00:22+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:00:22.87286 t=2020-05-02T16:00:22+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:00:22.87287 t=2020-05-02T16:00:22+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:00:22.87287 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:00:22.87287 t=2020-05-02T16:00:22+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:00:22.87288 t=2020-05-02T16:00:22+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:00:22.87288 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:00:22.90480 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:00:22.90482 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:00:22.90482 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:00:22.90483 t=2020-05-02T16:00:22+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:00:22.90483 t=2020-05-02T16:00:22+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:00:23.68312 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:00:23.68314 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:00:23.68314 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:00:23.68314 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:00:23.68315 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:00:23.68315 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:00:23.68315 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:00:23.68315 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:00:23.68316 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:00:23.68316 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:00:23.68316 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:00:23.72694 t=2020-05-02T16:00:23+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:00:24.22988 t=2020-05-02T16:00:24+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:00:24.23000 t=2020-05-02T16:00:24+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:01:43.81494 t=2020-05-02T16:01:43+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:01:43.81495 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:01:43.81498 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:01:43.81499 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:01:43.81499 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:01:43.81500 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:01:43.81500 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:01:43.81500 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:01:43.81501 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:01:43.81501 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:01:43.81501 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:01:43.81503 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:01:43.91601 t=2020-05-02T16:01:43+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:01:43.91604 t=2020-05-02T16:01:43+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:01:43.94857 t=2020-05-02T16:01:43+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:01:43.94859 t=2020-05-02T16:01:43+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:01:43.94859 t=2020-05-02T16:01:43+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:01:43.94860 t=2020-05-02T16:01:43+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:01:43.94860 t=2020-05-02T16:01:43+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:01:43.94860 t=2020-05-02T16:01:43+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:01:43.94860 t=2020-05-02T16:01:43+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:01:43.94861 t=2020-05-02T16:01:43+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:01:43.94861 t=2020-05-02T16:01:43+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:01:43.94861 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:01:43.94864 t=2020-05-02T16:01:43+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:01:43.94865 t=2020-05-02T16:01:43+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:01:43.94865 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:01:43.94865 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:01:43.94865 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:01:43.94866 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:01:43.94866 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:01:43.94866 t=2020-05-02T16:01:43+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:01:43.98059 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:01:43.98060 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:01:43.98061 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:01:43.98061 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:01:43.98061 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:01:43.98061 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:01:43.98062 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:01:43.98062 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:01:43.98062 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:01:43.98062 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:01:43.98063 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:01:43.98063 t=2020-05-02T16:01:43+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:01:44.07790 t=2020-05-02T16:01:44+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:01:44.07791 t=2020-05-02T16:01:44+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:06:14.61554 t=2020-05-02T16:06:14+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:06:14.61555 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:06:14.61556 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:06:14.61556 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:06:14.61556 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:06:14.61556 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:06:14.61557 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:06:14.61558 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:06:14.61558 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:06:14.61559 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:06:14.61653 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:06:14.61656 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:06:14.71794 t=2020-05-02T16:06:14+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:06:14.71796 t=2020-05-02T16:06:14+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:06:14.77884 t=2020-05-02T16:06:14+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:06:14.77886 t=2020-05-02T16:06:14+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:06:14.77886 t=2020-05-02T16:06:14+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:06:14.77888 t=2020-05-02T16:06:14+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:06:14.77889 t=2020-05-02T16:06:14+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:06:14.77889 t=2020-05-02T16:06:14+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:06:14.77890 t=2020-05-02T16:06:14+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:06:14.77890 t=2020-05-02T16:06:14+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:06:14.77890 t=2020-05-02T16:06:14+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:06:14.78045 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:06:14.78046 t=2020-05-02T16:06:14+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:06:14.78046 t=2020-05-02T16:06:14+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:06:14.86658 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:06:14.86681 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:06:14.86690 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:06:14.86690 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:06:14.86692 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:06:14.86697 t=2020-05-02T16:06:14+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:06:14.93659 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:06:14.93660 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:06:14.93660 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:06:14.93661 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:06:14.93662 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:06:14.93663 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:06:14.93664 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:06:14.93665 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:06:14.93673 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:06:14.93673 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:06:14.93673 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:06:14.93729 t=2020-05-02T16:06:14+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:06:15.28364 t=2020-05-02T16:06:15+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:06:15.28366 t=2020-05-02T16:06:15+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:07:08.91309 t=2020-05-02T16:07:08+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:07:08.91311 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:07:08.91311 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:07:08.91311 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:07:08.91312 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:07:08.91312 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:07:08.91312 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:07:08.91313 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:07:08.91313 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:07:08.91314 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:07:08.91316 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:07:08.91318 t=2020-05-02T16:07:08+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:07:09.01340 t=2020-05-02T16:07:09+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:07:09.01342 t=2020-05-02T16:07:09+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:07:09.04590 t=2020-05-02T16:07:09+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:07:09.04592 t=2020-05-02T16:07:09+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:07:09.04592 t=2020-05-02T16:07:09+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:07:09.04592 t=2020-05-02T16:07:09+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:07:09.04592 t=2020-05-02T16:07:09+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:07:09.04593 t=2020-05-02T16:07:09+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:07:09.04593 t=2020-05-02T16:07:09+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:07:09.04593 t=2020-05-02T16:07:09+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:07:09.04593 t=2020-05-02T16:07:09+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:07:09.04594 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:07:09.04595 t=2020-05-02T16:07:09+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:07:09.04597 t=2020-05-02T16:07:09+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:07:09.04597 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:07:09.04597 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:07:09.04598 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:07:09.04598 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:07:09.04598 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:07:09.04598 t=2020-05-02T16:07:09+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:07:09.08058 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:07:09.08059 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:07:09.08059 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:07:09.08060 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:07:09.08060 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:07:09.08060 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:07:09.08060 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:07:09.08061 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:07:09.08061 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:07:09.08061 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:07:09.08061 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:07:09.08062 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:07:09.25106 t=2020-05-02T16:07:09+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:07:09.25107 t=2020-05-02T16:07:09+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:09:01.44621 t=2020-05-02T16:09:01+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:09:01.44624 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:09:01.44624 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:09:01.44624 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:09:01.44625 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:09:01.44625 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:09:01.44626 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:09:01.44626 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:09:01.44626 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:09:01.44626 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:09:01.44627 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:09:01.44628 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:09:01.54642 t=2020-05-02T16:09:01+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:09:01.54644 t=2020-05-02T16:09:01+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:09:01.72293 t=2020-05-02T16:09:01+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:09:01.72294 t=2020-05-02T16:09:01+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:09:01.72295 t=2020-05-02T16:09:01+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:09:01.72295 t=2020-05-02T16:09:01+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:09:01.72295 t=2020-05-02T16:09:01+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:09:01.72295 t=2020-05-02T16:09:01+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:09:01.72296 t=2020-05-02T16:09:01+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:09:01.72296 t=2020-05-02T16:09:01+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:09:01.72296 t=2020-05-02T16:09:01+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:09:01.72322 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:09:01.72322 t=2020-05-02T16:09:01+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:09:01.72360 t=2020-05-02T16:09:01+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:09:01.73256 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:09:01.84255 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:09:01.84256 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:09:01.84257 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:09:01.84258 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:09:01.84258 t=2020-05-02T16:09:01+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:09:01.86673 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:09:01.86676 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:09:01.86677 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:09:01.86678 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:09:01.86681 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:09:01.86682 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:09:01.86684 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:09:01.86691 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:09:01.86693 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:09:01.86694 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:09:01.86696 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:09:01.86754 t=2020-05-02T16:09:01+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:09:02.01916 t=2020-05-02T16:09:02+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:09:02.01918 t=2020-05-02T16:09:02+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:10:40.20083 t=2020-05-02T16:10:40+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:10:40.20085 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:10:40.20085 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:10:40.20085 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:10:40.20086 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:10:40.20086 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:10:40.20086 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:10:40.20087 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:10:40.20087 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:10:40.20087 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:10:40.20087 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:10:40.20469 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:10:40.30167 t=2020-05-02T16:10:40+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:10:40.30168 t=2020-05-02T16:10:40+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:10:40.33860 t=2020-05-02T16:10:40+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:10:40.33862 t=2020-05-02T16:10:40+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:10:40.33863 t=2020-05-02T16:10:40+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:10:40.33863 t=2020-05-02T16:10:40+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:10:40.33863 t=2020-05-02T16:10:40+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:10:40.33864 t=2020-05-02T16:10:40+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:10:40.33881 t=2020-05-02T16:10:40+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:10:40.33882 t=2020-05-02T16:10:40+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:10:40.33882 t=2020-05-02T16:10:40+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:10:40.34144 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:10:40.34146 t=2020-05-02T16:10:40+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:10:40.34147 t=2020-05-02T16:10:40+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:10:40.34701 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:10:40.34814 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:10:40.34815 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:10:40.34819 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:10:40.34820 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:10:40.34821 t=2020-05-02T16:10:40+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:10:40.38234 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:10:40.38236 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:10:40.38236 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:10:40.38237 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:10:40.38237 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:10:40.38238 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:10:40.38238 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:10:40.38240 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:10:40.38241 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:10:40.38242 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:10:40.38243 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:10:40.38272 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:10:40.47160 t=2020-05-02T16:10:40+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:10:40.47161 t=2020-05-02T16:10:40+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=
+2020-05-02_07:15:32.21678 t=2020-05-02T16:15:32+0900 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-05-02_07:15:32.33935 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped Stream Manager"
+2020-05-02_07:15:32.33937 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+2020-05-02_07:15:32.33937 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+2020-05-02_07:15:32.33938 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+2020-05-02_07:15:32.33939 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+2020-05-02_07:15:32.33939 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+2020-05-02_07:15:32.33939 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+2020-05-02_07:15:32.33940 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped TracingService" logger=server reason=nil
+2020-05-02_07:15:32.33940 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+2020-05-02_07:15:32.33940 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+2020-05-02_07:15:32.33940 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+2020-05-02_07:15:32.34022 t=2020-05-02T16:15:32+0900 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+2020-05-02_07:15:32.34023 t=2020-05-02T16:15:32+0900 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+2020-05-02_07:15:32.49461 t=2020-05-02T16:15:32+0900 lvl=info msg="Starting Grafana" logger=server version=6.3.5 commit=67bad72 branch=HEAD compiled=2019-09-02T18:34:49+0900
+2020-05-02_07:15:32.49463 t=2020-05-02T16:15:32+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-05-02_07:15:32.49463 t=2020-05-02T16:15:32+0900 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-05-02_07:15:32.49463 t=2020-05-02T16:15:32+0900 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-05-02_07:15:32.49464 t=2020-05-02T16:15:32+0900 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-05-02_07:15:32.49464 t=2020-05-02T16:15:32+0900 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-05-02_07:15:32.49464 t=2020-05-02T16:15:32+0900 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-05-02_07:15:32.49464 t=2020-05-02T16:15:32+0900 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-05-02_07:15:32.49465 t=2020-05-02T16:15:32+0900 lvl=info msg="App mode production" logger=settings
+2020-05-02_07:15:32.49465 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing SqlStore" logger=server
+2020-05-02_07:15:32.49466 t=2020-05-02T16:15:32+0900 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-05-02_07:15:32.49535 t=2020-05-02T16:15:32+0900 lvl=info msg="Starting DB migration" logger=migrator
+2020-05-02_07:15:32.55864 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing HTTPServer" logger=server
+2020-05-02_07:15:32.58692 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing InternalMetricsService" logger=server
+2020-05-02_07:15:32.58694 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing RemoteCache" logger=server
+2020-05-02_07:15:32.58694 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing QuotaService" logger=server
+2020-05-02_07:15:32.58695 t=2020-05-02T16:15:32+0900 lvl=info msg="Initializing PluginManager" logger=server
+2020-05-02_07:15:32.58700 t=2020-05-02T16:15:32+0900 lvl=info msg="Starting plugin search" logger=plugins
+2020-05-02_07:15:33.43197 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing RenderingService" logger=server
+2020-05-02_07:15:33.43199 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing DatasourceCacheService" logger=server
+2020-05-02_07:15:33.43199 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing HooksService" logger=server
+2020-05-02_07:15:33.43200 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing LoginService" logger=server
+2020-05-02_07:15:33.43201 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing SearchService" logger=server
+2020-05-02_07:15:33.43201 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing ServerLockService" logger=server
+2020-05-02_07:15:33.43201 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing TracingService" logger=server
+2020-05-02_07:15:33.43203 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing UsageStatsService" logger=server
+2020-05-02_07:15:33.43204 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing UserAuthTokenService" logger=server
+2020-05-02_07:15:33.43205 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing CleanUpService" logger=server
+2020-05-02_07:15:33.43206 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing NotificationService" logger=server
+2020-05-02_07:15:33.50798 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+2020-05-02_07:15:33.94031 t=2020-05-02T16:15:33+0900 lvl=info msg="Initializing Stream Manager"
+2020-05-02_07:15:33.94041 t=2020-05-02T16:15:33+0900 lvl=info msg="HTTP Server Listen" logger=http.server address=localhost:3000 protocol=http subUrl=/-/grafana socket=

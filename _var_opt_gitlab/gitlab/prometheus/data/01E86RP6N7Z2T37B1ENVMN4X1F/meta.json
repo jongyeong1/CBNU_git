@@ -1,0 +1,17 @@
+{
+	"ulid": "01E86RP6N7Z2T37B1ENVMN4X1F",
+	"minTime": 1588780800000,
+	"maxTime": 1588788000000,
+	"stats": {
+		"numSamples": 676012,
+		"numSeries": 12838,
+		"numChunks": 12838
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01E86RP6N7Z2T37B1ENVMN4X1F"
+		]
+	},
+	"version": 1
+}

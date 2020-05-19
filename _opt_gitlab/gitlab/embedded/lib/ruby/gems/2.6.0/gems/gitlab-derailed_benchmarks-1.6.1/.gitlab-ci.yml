@@ -1,0 +1,56 @@
+.test-template: &test
+  before_script:
+    - ruby -v
+    - git config --global user.email "test@example.com"
+    - gem install bundler --no-document
+    - bundle install -j $(nproc)
+  script:
+    - bundle exec rake test
+
+ruby-2.5-rails-5.1:
+  image: "ruby:2.5"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_5_1.gemfile"
+  <<: *test
+
+ruby-2.5-rails-5.2:
+  image: "ruby:2.5"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_5_2.gemfile"
+  <<: *test
+
+ruby-2.5-rails-6.0:
+  image: "ruby:2.5"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_6_0.gemfile"
+  <<: *test
+
+ruby-2.5-rails-git:
+  image: "ruby:2.5"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_git.gemfile"
+  <<: *test
+
+ruby-2.6-rails-5.1:
+  image: "ruby:2.6"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_5_1.gemfile"
+  <<: *test
+
+ruby-2.6-rails-5.2:
+  image: "ruby:2.6"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_5_2.gemfile"
+  <<: *test
+
+ruby-2.6-rails-6.0:
+  image: "ruby:2.6"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_6_0.gemfile"
+  <<: *test
+
+ruby-2.6-rails-git:
+  image: "ruby:2.6"
+  variables:
+    BUNDLE_GEMFILE: "$CI_PROJECT_DIR/gemfiles/rails_git.gemfile"
+  <<: *test

@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[81],{2193:function(n,t,e){e(105),n.exports=e(286)},286:function(n,t,e){"use strict";e.r(t);var o=e(96);document.addEventListener("DOMContentLoaded",(function(){Object(o.a)(document,gon)}))}},[[2193,1,0,2]]]);
+//# sourceMappingURL=pages.groups.055ba23d.chunk.js.map

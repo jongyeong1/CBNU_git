@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Let runit capture all script error messages
+exec 2>&1
+
+# Setup run directory.
+mkdir -p /run/gitlab/unicorn
+chmod 0700 /run/gitlab/unicorn
+chown git /run/gitlab/unicorn
+export prometheus_run_dir='/run/gitlab/unicorn'
+
+
+
+
+exec chpst -P -u git:git -U git:git \
+  /usr/bin/env \
+    current_pidfile=/opt/gitlab/var/unicorn/unicorn.pid \
+    rails_app=gitlab-rails \
+    user=git \
+    group=git \
+    environment=production \
+    unicorn_rb=/var/opt/gitlab/gitlab-rails/etc/unicorn.rb \
+    prometheus_multiproc_dir="${prometheus_run_dir}" \
+    /opt/gitlab/embedded/bin/gitlab-unicorn-wrapper

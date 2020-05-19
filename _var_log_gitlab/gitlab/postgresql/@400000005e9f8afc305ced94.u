@@ -1,0 +1,11 @@
+2020-04-19_17:42:04.66836 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2020-04-19_17:42:05.87186 LOG:  database system was interrupted; last known up at 2020-04-19 08:00:08 GMT
+2020-04-19_17:42:18.59203 FATAL:  the database system is starting up
+2020-04-19_17:42:19.59453 FATAL:  the database system is starting up
+2020-04-19_17:42:21.59699 FATAL:  the database system is starting up
+2020-04-19_17:42:33.59110 FATAL:  the database system is starting up
+2020-04-19_17:42:34.59723 FATAL:  the database system is starting up
+2020-04-19_17:42:36.60165 FATAL:  the database system is starting up
+2020-04-19_17:42:36.68012 FATAL:  the database system is starting up
+2020-04-19_17:42:36.68161 FATAL:  the database system is starting up
+2020-04-19_17:42:36.68278 FATAL:  the database system is starting up

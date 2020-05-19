@@ -1,0 +1,18 @@
+2020-05-13_01:30:18.11599 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2020-05-13_01:30:20.06162 LOG:  database system was interrupted; last known up at 2020-05-13 10:18:39 GMT
+2020-05-13_01:30:33.59882 FATAL:  the database system is starting up
+2020-05-13_01:30:34.60117 FATAL:  the database system is starting up
+2020-05-13_01:30:36.60765 FATAL:  the database system is starting up
+2020-05-13_01:30:48.58852 FATAL:  the database system is starting up
+2020-05-13_01:30:49.58961 FATAL:  the database system is starting up
+2020-05-13_01:30:51.59147 FATAL:  the database system is starting up
+2020-05-13_01:31:03.60030 FATAL:  the database system is starting up
+2020-05-13_01:31:04.60488 FATAL:  the database system is starting up
+2020-05-13_01:31:06.39484 FATAL:  the database system is starting up
+2020-05-13_01:31:06.39870 FATAL:  the database system is starting up
+2020-05-13_01:31:06.41129 FATAL:  the database system is starting up
+2020-05-13_01:31:06.61734 FATAL:  the database system is starting up
+2020-05-13_01:31:09.42533 LOG:  database system was not properly shut down; automatic recovery in progress
+2020-05-13_01:31:09.79440 LOG:  invalid record length at 0/222BFD0: wanted 24, got 0
+2020-05-13_01:31:09.79443 LOG:  redo is not required
+2020-05-13_01:31:09.87779 LOG:  database system is ready to accept connections

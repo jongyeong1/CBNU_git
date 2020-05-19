@@ -1,0 +1,32 @@
+.test_template: &test_definition
+  stage: test
+  script:
+    - gem install bundler
+    - bundle install
+    - bundle exec rake verify build install
+
+test:2.6:
+  image: ruby:2.6
+  <<: *test_definition
+
+test:2.5:
+  image: ruby:2.5
+  <<: *test_definition
+
+test:2.4:
+  image: ruby:2.4
+  <<: *test_definition
+
+deploy:
+  stage: deploy
+  script:
+    - tools/deploy-rubygem.sh
+  only:
+    - tags
+
+release:
+  stage: deploy
+  script:
+    - tools/update-changelog.rb "${CI_COMMIT_TAG}"
+  only:
+    - tags

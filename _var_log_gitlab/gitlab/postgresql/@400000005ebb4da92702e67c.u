@@ -1,0 +1,32 @@
+2020-05-13_10:18:09.29646 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2020-05-13_10:18:10.92066 LOG:  database system was interrupted; last known up at 2020-05-06 08:34:22 GMT
+2020-05-13_10:18:18.60954 FATAL:  the database system is starting up
+2020-05-13_10:18:19.61236 FATAL:  the database system is starting up
+2020-05-13_10:18:21.62382 FATAL:  the database system is starting up
+2020-05-13_10:18:24.05407 FATAL:  the database system is starting up
+2020-05-13_10:18:24.05770 FATAL:  the database system is starting up
+2020-05-13_10:18:24.06210 FATAL:  the database system is starting up
+2020-05-13_10:18:33.59303 FATAL:  the database system is starting up
+2020-05-13_10:18:34.59495 FATAL:  the database system is starting up
+2020-05-13_10:18:36.06827 FATAL:  the database system is starting up
+2020-05-13_10:18:36.07019 FATAL:  the database system is starting up
+2020-05-13_10:18:36.07523 FATAL:  the database system is starting up
+2020-05-13_10:18:36.59679 FATAL:  the database system is starting up
+2020-05-13_10:18:38.60074 LOG:  database system was not properly shut down; automatic recovery in progress
+2020-05-13_10:18:38.64485 LOG:  invalid record length at 0/222BF60: wanted 24, got 0
+2020-05-13_10:18:38.64489 LOG:  redo is not required
+2020-05-13_10:18:39.09149 LOG:  database system is ready to accept connections
+2020-05-13_01:22:52.29668 LOG:  stats collector's time 2020-05-13 10:22:36.106455+00 is later than backend local time 2020-05-13 01:22:52.296534+00
+2020-05-13_01:22:52.29689 STATEMENT:            SELECT relname,seq_tup_read,idx_tup_fetch,n_tup_ins,n_tup_upd,n_tup_del,n_tup_hot_upd,n_dead_tup,seq_scan
+2020-05-13_01:22:52.29690 	          FROM pg_stat_user_tables
+2020-05-13_01:22:52.29690 	          WHERE relname IN (SELECT tablename FROM pg_tables WHERE tableowner = 'gitlab')
+2020-05-13_01:22:52.29691 	          GROUP BY relname,seq_tup_read,idx_tup_fetch,n_tup_ins,n_tup_upd,n_tup_del,n_tup_hot_upd,n_dead_tup,seq_scan
+2020-05-13_01:22:52.29691 	
+2020-05-13_01:22:52.29693 LOG:  stats_timestamp 2020-05-13 10:22:36.106455+00 is later than collector's time 2020-05-13 01:22:52.296826+00 for database 16385
+2020-05-13_01:23:04.78566 LOG:  stats collector's time 2020-05-13 10:22:48.605068+00 is later than backend local time 2020-05-13 01:23:04.785271+00
+2020-05-13_01:23:04.78568 STATEMENT:  
+2020-05-13_01:23:04.78568 				SELECT *,
+2020-05-13_01:23:04.78569 					extract(epoch from now() - last_archived_time) AS last_archive_age
+2020-05-13_01:23:04.78569 				FROM pg_stat_archiver
+2020-05-13_01:23:04.78570 				
+2020-05-13_01:23:04.78570 LOG:  stats_timestamp 2020-05-13 10:22:48.605068+00 is later than collector's time 2020-05-13 01:23:04.785519+00 for database 13214

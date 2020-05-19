@@ -1,0 +1,169 @@
+{
+  "scopeName": "etc",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#esc"
+    },
+    {
+      "include": "#float"
+    },
+    {
+      "include": "#int"
+    },
+    {
+      "include": "#str"
+    },
+    {
+      "include": "#colon"
+    },
+    {
+      "include": "#eql"
+    },
+    {
+      "include": "#dot"
+    },
+    {
+      "include": "#bareword"
+    }
+  ],
+  "repository": {
+    "bareword": {
+      "name": "string.unquoted.bareword",
+      "match": "[^\"\\s][\\S]*"
+    },
+    "bool": {
+      "name": "constant.logical.bool.boolean.${1:/downcase}",
+      "match": "\\b(true|false|TRUE|FALSE)\\b"
+    },
+    "colon": {
+      "name": "keyword.operator.assignment.key-value.colon",
+      "match": ":"
+    },
+    "comment": {
+      "name": "comment.line.number-sign",
+      "begin": "#",
+      "end": "$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment"
+        }
+      }
+    },
+    "dot": {
+      "name": "punctuation.delimiter.separator.property.period.dot",
+      "match": "\\."
+    },
+    "eql": {
+      "name": "keyword.operator.assignment.key-value.equals-sign",
+      "match": "="
+    },
+    "esc": {
+      "name": "constant.character.escape.backslash",
+      "match": "(\\\\).",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.escape.backslash"
+        }
+      }
+    },
+    "float": {
+      "patterns": [
+        {
+          "include": "#floatExp"
+        },
+        {
+          "include": "#floatNoExp"
+        }
+      ]
+    },
+    "floatExp": {
+      "name": "constant.numeric.float.real.decimal.dec.exponential.scientific",
+      "match": "[-+]?(?:[0-9]*\\.[0-9]+|[0-9]+\\.)(?:[eE][-+]?[0-9]+)++"
+    },
+    "floatNoExp": {
+      "name": "constant.numeric.float.real.decimal.dec",
+      "match": "[-+]?(?:[0-9]*\\.[0-9]+|[0-9]+\\.)++"
+    },
+    "int": {
+      "patterns": [
+        {
+          "include": "#intExp"
+        },
+        {
+          "include": "#intNoExp"
+        }
+      ]
+    },
+    "intExp": {
+      "name": "constant.numeric.integer.int.decimal.dec.exponential.scientific",
+      "match": "[-+]?[0-9]+[eE][-+]?[0-9]+"
+    },
+    "intNoExp": {
+      "name": "constant.numeric.integer.int.decimal.dec",
+      "match": "[-+]?[0-9]+"
+    },
+    "num": {
+      "patterns": [
+        {
+          "include": "#float"
+        },
+        {
+          "include": "#int"
+        }
+      ]
+    },
+    "str": {
+      "patterns": [
+        {
+          "include": "#strDouble"
+        },
+        {
+          "include": "#strSingle"
+        }
+      ]
+    },
+    "strDouble": {
+      "name": "string.quoted.double",
+      "begin": "\"",
+      "end": "\"|(?=$)",
+      "patterns": [
+        {
+          "include": "#esc"
+        }
+      ],
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end"
+        }
+      }
+    },
+    "strSingle": {
+      "name": "string.quoted.single",
+      "begin": "'",
+      "end": "'|(?=$)",
+      "patterns": [
+        {
+          "include": "#esc"
+        }
+      ],
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+2020-05-06_16:46:06.54895 13969:C 07 May 2020 01:46:06.545 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2020-05-06_16:46:06.54904 13969:C 07 May 2020 01:46:06.545 # Redis version=5.0.7, bits=64, commit=4891612b, modified=0, pid=13969, just started
+2020-05-06_16:46:06.54905 13969:C 07 May 2020 01:46:06.545 # Configuration loaded
+2020-05-06_16:46:06.54970 13969:M 07 May 2020 01:46:06.549 * Running mode=standalone, port=0.
+2020-05-06_16:46:06.54971 13969:M 07 May 2020 01:46:06.549 # Server initialized
+2020-05-06_16:46:06.54971 13969:M 07 May 2020 01:46:06.549 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2020-05-06_16:46:06.54972 13969:M 07 May 2020 01:46:06.549 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+2020-05-06_16:46:07.42221 13969:M 07 May 2020 01:46:07.422 * DB loaded from disk: 0.870 seconds
+2020-05-06_16:46:07.42223 13969:M 07 May 2020 01:46:07.422 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2020-05-06_07:49:08.75799 13969:signal-handler (1588751348) Received SIGTERM scheduling shutdown...
+2020-05-06_07:49:08.98728 13969:M 06 May 2020 16:49:08.801 # User requested shutdown...
+2020-05-06_07:49:08.98731 13969:M 06 May 2020 16:49:08.801 * Saving the final RDB snapshot before exiting.
+2020-05-06_07:49:09.52200 13969:M 06 May 2020 16:49:09.521 * DB saved on disk
+2020-05-06_07:49:09.52201 13969:M 06 May 2020 16:49:09.521 * Removing the pid file.
+2020-05-06_07:49:09.52230 13969:M 06 May 2020 16:49:09.522 * Removing the unix socket file.
+2020-05-06_07:49:09.52230 13969:M 06 May 2020 16:49:09.522 # Redis is now ready to exit, bye bye...
+2020-05-06_07:49:10.95910 16037:C 06 May 2020 16:49:10.958 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2020-05-06_07:49:10.95913 16037:C 06 May 2020 16:49:10.958 # Redis version=5.0.7, bits=64, commit=4891612b, modified=0, pid=16037, just started
+2020-05-06_07:49:10.95914 16037:C 06 May 2020 16:49:10.958 # Configuration loaded
+2020-05-06_07:49:10.96024 16037:M 06 May 2020 16:49:10.959 * Running mode=standalone, port=0.
+2020-05-06_07:49:10.96025 16037:M 06 May 2020 16:49:10.959 # Server initialized
+2020-05-06_07:49:10.96026 16037:M 06 May 2020 16:49:10.959 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2020-05-06_07:49:10.96026 16037:M 06 May 2020 16:49:10.959 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+2020-05-06_07:49:10.96109 16037:M 06 May 2020 16:49:10.960 * DB loaded from disk: 0.001 seconds
+2020-05-06_07:49:10.96109 16037:M 06 May 2020 16:49:10.960 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2020-05-06_07:54:11.00520 16037:M 06 May 2020 16:54:11.005 * 10 changes in 300 seconds. Saving...
+2020-05-06_07:54:12.91889 16037:M 06 May 2020 16:54:12.917 * Background saving started by pid 17920
+2020-05-06_07:54:16.10417 17920:C 06 May 2020 16:54:16.104 * DB saved on disk
+2020-05-06_07:54:16.10452 17920:C 06 May 2020 16:54:16.104 * RDB: 7 MB of memory used by copy-on-write
+2020-05-06_07:54:16.14040 16037:M 06 May 2020 16:54:16.140 * Background saving terminated with success

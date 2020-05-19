@@ -1,0 +1,21 @@
+{
+  "scopeName": "injections.etc",
+  "patterns": [
+    {
+      "name": "meta.embedded.source.diff",
+      "begin": "(?\u003c=__END__)(?=\\s|$)",
+      "end": "(?=^(?!diff ))",
+      "patterns": [
+        {
+          "begin": "^(?=diff )",
+          "end": "(?=A)B",
+          "patterns": [
+            {
+              "include": "source.diff"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+2020-05-13_01:30:09.02431 13791:C 13 May 2020 10:30:09.024 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2020-05-13_01:30:09.02441 13791:C 13 May 2020 10:30:09.024 # Redis version=5.0.7, bits=64, commit=4891612b, modified=0, pid=13791, just started
+2020-05-13_01:30:09.02442 13791:C 13 May 2020 10:30:09.024 # Configuration loaded
+2020-05-13_01:30:09.03637 13791:M 13 May 2020 10:30:09.025 * Running mode=standalone, port=0.
+2020-05-13_01:30:09.03640 13791:M 13 May 2020 10:30:09.025 # Server initialized
+2020-05-13_01:30:09.03641 13791:M 13 May 2020 10:30:09.025 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2020-05-13_01:30:09.03641 13791:M 13 May 2020 10:30:09.025 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+2020-05-13_01:30:09.85387 13791:M 13 May 2020 10:30:09.853 * DB loaded from disk: 0.812 seconds
+2020-05-13_01:30:09.85389 13791:M 13 May 2020 10:30:09.853 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2020-05-13_01:35:10.05429 13791:M 13 May 2020 10:35:10.054 * 10 changes in 300 seconds. Saving...
+2020-05-13_01:35:10.06329 13791:M 13 May 2020 10:35:10.063 * Background saving started by pid 16057
+2020-05-13_01:35:10.67261 16057:C 13 May 2020 10:35:10.672 * DB saved on disk
+2020-05-13_01:35:10.67316 16057:C 13 May 2020 10:35:10.673 * RDB: 7 MB of memory used by copy-on-write
+2020-05-13_01:35:10.67756 13791:M 13 May 2020 10:35:10.677 * Background saving terminated with success
+2020-05-13_01:40:11.03830 13791:M 13 May 2020 10:40:11.038 * 10 changes in 300 seconds. Saving...
+2020-05-13_01:40:11.04519 13791:M 13 May 2020 10:40:11.044 * Background saving started by pid 16909
+2020-05-13_01:40:11.28947 16909:C 13 May 2020 10:40:11.289 * DB saved on disk
+2020-05-13_01:40:11.28996 16909:C 13 May 2020 10:40:11.289 * RDB: 7 MB of memory used by copy-on-write
+2020-05-13_01:40:11.34857 13791:M 13 May 2020 10:40:11.348 * Background saving terminated with success
+2020-05-13_01:45:12.07642 13791:M 13 May 2020 10:45:12.076 * 10 changes in 300 seconds. Saving...
+2020-05-13_01:45:12.08139 13791:M 13 May 2020 10:45:12.081 * Background saving started by pid 17836
+2020-05-13_01:45:12.12462 17836:C 13 May 2020 10:45:12.124 * DB saved on disk
+2020-05-13_01:45:12.12535 17836:C 13 May 2020 10:45:12.125 * RDB: 6 MB of memory used by copy-on-write
+2020-05-13_01:45:12.18341 13791:M 13 May 2020 10:45:12.182 * Background saving terminated with success
+2020-05-13_01:50:13.01065 13791:M 13 May 2020 10:50:13.010 * 10 changes in 300 seconds. Saving...
+2020-05-13_01:50:13.04786 13791:M 13 May 2020 10:50:13.011 * Background saving started by pid 18610
+2020-05-13_01:50:13.20387 18610:C 13 May 2020 10:50:13.203 * DB saved on disk
+2020-05-13_01:50:13.20441 18610:C 13 May 2020 10:50:13.204 * RDB: 6 MB of memory used by copy-on-write
+2020-05-13_01:50:13.21457 13791:M 13 May 2020 10:50:13.214 * Background saving terminated with success
+2020-05-13_01:55:14.03542 13791:M 13 May 2020 10:55:14.035 * 10 changes in 300 seconds. Saving...
+2020-05-13_01:55:14.03625 13791:M 13 May 2020 10:55:14.036 * Background saving started by pid 19354
+2020-05-13_01:55:14.07258 19354:C 13 May 2020 10:55:14.072 * DB saved on disk
+2020-05-13_01:55:14.07295 19354:C 13 May 2020 10:55:14.072 * RDB: 7 MB of memory used by copy-on-write
+2020-05-13_01:55:14.14846 13791:M 13 May 2020 10:55:14.148 * Background saving terminated with success

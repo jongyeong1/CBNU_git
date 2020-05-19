@@ -1,0 +1,8 @@
+#!/bin/sh
+exec 2>&1
+
+umask 077
+exec chpst -P -e /opt/gitlab/etc/node-exporter/env \
+  -U gitlab-prometheus:gitlab-prometheus \
+  -u gitlab-prometheus:gitlab-prometheus \
+  /opt/gitlab/embedded/bin/node_exporter --web.listen-address=localhost:9100 --collector.mountstats --collector.runit --collector.runit.servicedir=/opt/gitlab/sv --collector.textfile.directory=/var/opt/gitlab/node-exporter/textfile_collector

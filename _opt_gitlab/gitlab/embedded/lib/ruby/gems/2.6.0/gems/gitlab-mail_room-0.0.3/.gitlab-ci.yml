@@ -1,0 +1,27 @@
+# Cache gems in between builds
+
+.test-template: &test
+  cache:
+    paths:
+      - vendor/ruby
+  script:
+  - bundle exec rspec spec
+  before_script:
+    - apt update && apt install -y libicu-dev
+    - ruby -v                                   # Print out ruby version for debugging
+    # Uncomment next line if your rails app needs a JS runtime:
+    # - apt-get update -q && apt-get install nodejs -yqq
+    - gem install bundler  --no-document    # Bundler is not installed with the image
+    - bundle install -j $(nproc) --path vendor  # Install dependencies into ./vendor/ruby
+
+rspec-2.4:
+  image: "ruby:2.4"
+  <<: *test
+
+rspec-2.5:
+  image: "ruby:2.5"
+  <<: *test
+
+rspec-2.6:
+  image: "ruby:2.6"
+  <<: *test

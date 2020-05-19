@@ -1,0 +1,110 @@
+2020-05-06_16:46:16.41086 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2020-05-06_16:46:17.91036 LOG:  database system was interrupted; last known up at 2020-05-02 07:20:36 GMT
+2020-05-06_16:46:33.60746 FATAL:  the database system is starting up
+2020-05-06_16:46:34.61096 FATAL:  the database system is starting up
+2020-05-06_16:46:36.61497 FATAL:  the database system is starting up
+2020-05-06_16:46:48.60224 FATAL:  the database system is starting up
+2020-05-06_16:46:49.60971 FATAL:  the database system is starting up
+2020-05-06_16:46:51.61113 FATAL:  the database system is starting up
+2020-05-06_16:46:51.75282 FATAL:  the database system is starting up
+2020-05-06_16:46:51.76048 FATAL:  the database system is starting up
+2020-05-06_16:46:51.76465 FATAL:  the database system is starting up
+2020-05-06_16:46:58.18464 LOG:  database system was not properly shut down; automatic recovery in progress
+2020-05-06_16:46:58.24799 LOG:  invalid record length at 0/222BBE0: wanted 24, got 0
+2020-05-06_16:46:58.24799 LOG:  redo is not required
+2020-05-06_16:46:58.39854 LOG:  database system is ready to accept connections
+2020-05-06_07:47:35.18311 LOG:  stats collector's time 2020-05-06 16:47:18.605641+00 is later than backend local time 2020-05-06 07:47:35.183023+00
+2020-05-06_07:47:35.18315 STATEMENT:  SELECT * FROM pg_stat_database_conflicts;
+2020-05-06_07:47:35.18402 LOG:  stats_timestamp 2020-05-06 16:47:18.605641+00 is later than collector's time 2020-05-06 07:47:35.183531+00 for database 13214
+2020-05-06_07:47:35.19186 LOG:  stats collector's time 2020-05-06 16:47:18.605641+00 is later than backend local time 2020-05-06 07:47:35.191753+00
+2020-05-06_07:47:35.19190 STATEMENT:  
+2020-05-06_07:47:35.19190 				SELECT *,
+2020-05-06_07:47:35.19190 					extract(epoch from now() - last_archived_time) AS last_archive_age
+2020-05-06_07:47:35.19191 				FROM pg_stat_archiver
+2020-05-06_07:47:35.19194 				
+2020-05-06_07:47:35.19250 LOG:  stats collector's time 2020-05-06 16:47:18.605641+00 is later than backend local time 2020-05-06 07:47:35.192425+00
+2020-05-06_07:47:35.19251 STATEMENT:  SELECT * FROM pg_stat_database;
+2020-05-06_07:47:35.20010 LOG:  stats collector's time 2020-05-06 16:47:18.605641+00 is later than backend local time 2020-05-06 07:47:35.199332+00
+2020-05-06_07:47:35.20013 STATEMENT:  with table_opts_vs_statistic as (
+2020-05-06_07:47:35.20013 	  select
+2020-05-06_07:47:35.20013 	    pg_class.oid,
+2020-05-06_07:47:35.20013 	    pg_class.relname,
+2020-05-06_07:47:35.20014 	    coalesce(nspname, 'public') as schemaname,
+2020-05-06_07:47:35.20014 	    pg_class.relpages,
+2020-05-06_07:47:35.20014 	    pg_class.reltuples,
+2020-05-06_07:47:35.20014 	    case
+2020-05-06_07:47:35.20015 	      when array_to_string(reloptions, '') like '%autovacuum_vacuum_threshold%' then regexp_replace(array_to_string(reloptions, ''), '.*autovacuum_vacuum_threshold=([0-9.]+).*', E'\\1')::int8
+2020-05-06_07:47:35.20015 	      else current_setting('autovacuum_vacuum_threshold')::int8
+2020-05-06_07:47:35.20015 	    end as autovacuum_vacuum_threshold,
+2020-05-06_07:47:35.20016 	    case
+2020-05-06_07:47:35.20016 	      when array_to_string(reloptions, '') like '%autovacuum_vacuum_scale_factor%' then regexp_replace(array_to_string(reloptions, ''), '.*autovacuum_vacuum_scale_factor=([0-9.]+).*', E'\\1')::numeric
+2020-05-06_07:47:35.20016 	      else current_setting('autovacuum_vacuum_scale_factor')::numeric
+2020-05-06_07:47:35.20016 	    end as autovacuum_vacuum_scale_factor,
+2020-05-06_07:47:35.20017 	    case when array_to_string(reloptions, '') ~ 'autovacuum_enabled=(false|off)' then false else true end as autovacuum_enabled,
+2020-05-06_07:47:35.20019 	    n_dead_tup,
+2020-05-06_07:47:35.20019 	    last_autovacuum,
+2020-05-06_07:47:35.20021 	    last_vacuum
+2020-05-06_07:47:35.20021 	  from pg_class
+2020-05-06_07:47:35.20022 	  join pg_namespace ns on relnamespace = ns.oid 
+2020-05-06_07:47:35.20022 	  join pg_stat_all_tables psat  on psat.relid  = pg_class.oid
+2020-05-06_07:47:35.20022 	  where relkind in ('r','m') 
+2020-05-06_07:47:35.20022 	), p as (
+2020-05-06_07:47:35.20023 	  select pgspv.*,a.query,a.wait_event_type,a.wait_event,a.query_start
+2020-05-06_07:47:35.20024 	  from pg_stat_progress_vacuum pgspv
+2020-05-06_07:47:35.20024 	  left join pg_stat_activity a using (pid)
+2020-05-06_07:47:35.20024 	) 
+2020-05-06_07:47:35.20024 	select
+2020-05-06_07:47:35.20025 	  table_opts_vs_statistic.schemaname as schemaname,
+2020-05-06_07:47:35.20025 	  table_opts_vs_statistic.relname as relname,
+2020-05-06_07:47:35.20025 	  round((100 * table_opts_vs_statistic.n_dead_tup::numeric / nullif(table_opts_vs_statistic.reltuples, 0))::numeric, 2) as dead_tup_pct,
+2020-05-06_07:47:35.20025 	  table_opts_vs_statistic.reltuples::numeric as reltuples,
+2020-05-06_07:47:35.20026 	  table_opts_vs_statistic.n_dead_tup,
+2020-05-06_07:47:35.20026 	  (relpages::bigint*8*1024) AS table_size_bytes,
+2020-05-06_07:47:35.20026 	  'V. Threshold:' || table_opts_vs_statistic.autovacuum_vacuum_threshold
+2020-05-06_07:47:35.20026 	    || ', V. Scale Factor: ' || (table_opts_vs_statistic.autovacuum_vacuum_scale_factor)::numeric *100 ||' %'
+2020-05-06_07:47:35.20028 	    || case when not autovacuum_enabled then ', DISABLED' else ', enabled' end as "effective_settings",
+2020-05-06_07:47:35.20028 	  case
+2020-05-06_07:47:35.20028 	    when last_autovacuum > coalesce(last_vacuum, '0001-01-01') then last_autovacuum::timestamp(0)
+2020-05-06_07:47:35.20028 	    when last_vacuum is not null then last_vacuum::timestamp(0)
+2020-05-06_07:47:35.20029 	    else null
+2020-05-06_07:47:35.20029 	  end as "last_vacuumed",
+2020-05-06_07:47:35.20029 	  case
+2020-05-06_07:47:35.20029 	    when last_autovacuum > coalesce(last_vacuum, '0001-01-01') then 'auto'
+2020-05-06_07:47:35.20030 	    when last_vacuum is not null then 'manual'
+2020-05-06_07:47:35.20030 	    else null
+2020-05-06_07:47:35.20030 	  end as "type",
+2020-05-06_07:47:35.20030 	  coalesce(p.phase, 'in queue') as status,
+2020-05-06_07:47:35.20031 	  p.pid as pid,
+2020-05-06_07:47:35.20031 	  coalesce  (p.query,'')as  action,
+2020-05-06_07:47:35.20031 	  case when p.pid is null then null else coalesce(wait_event_type ||'.'|| wait_event, 'f') end as waiting,
+2020-05-06_07:47:35.20031 	  round(100.0 * p.heap_blks_scanned / nullif(p.heap_blks_total, 0), 1) AS scanned_pct,
+2020-05-06_07:47:35.20032 	  round(100.0 * p.heap_blks_vacuumed / nullif(p.heap_blks_total, 0), 1) AS vacuumed_pct,
+2020-05-06_07:47:35.20032 	  extract ('epoch' from  now()-query_start) elapsed_time
+2020-05-06_07:47:35.20032 	from 
+2020-05-06_07:47:35.20032 	table_opts_vs_statistic
+2020-05-06_07:47:35.20033 	full outer join p on p.relid = table_opts_vs_statistic.oid and p.datname = current_database()
+2020-05-06_07:47:35.20034 	where
+2020-05-06_07:47:35.20034 	  table_opts_vs_statistic.relpages >= 8
+2020-05-06_07:47:35.20034 	  and  autovacuum_vacuum_threshold + (autovacuum_vacuum_scale_factor::numeric * table_opts_vs_statistic.reltuples) < table_opts_vs_statistic.n_dead_tup
+2020-05-06_07:47:35.20035 	
+2020-05-06_07:47:35.20245 LOG:  stats collector's time 2020-05-06 16:47:18.605641+00 is later than backend local time 2020-05-06 07:47:35.202326+00
+2020-05-06_07:47:35.20246 STATEMENT:  SELECT * FROM pg_stat_bgwriter;
+2020-05-06_07:47:37.65804 LOG:  stats collector's time 2020-05-06 16:47:21.085846+00 is later than backend local time 2020-05-06 07:47:37.65746+00
+2020-05-06_07:47:37.65804 STATEMENT:            SELECT relname,seq_tup_read,idx_tup_fetch,n_tup_ins,n_tup_upd,n_tup_del,n_tup_hot_upd,n_dead_tup,seq_scan
+2020-05-06_07:47:37.65805 	          FROM pg_stat_user_tables
+2020-05-06_07:47:37.65805 	          WHERE relname IN (SELECT tablename FROM pg_tables WHERE tableowner = 'gitlab')
+2020-05-06_07:47:37.65805 	          GROUP BY relname,seq_tup_read,idx_tup_fetch,n_tup_ins,n_tup_upd,n_tup_del,n_tup_hot_upd,n_dead_tup,seq_scan
+2020-05-06_07:47:37.65806 	
+2020-05-06_07:47:37.65806 LOG:  stats_timestamp 2020-05-06 16:47:21.085846+00 is later than collector's time 2020-05-06 07:47:37.657644+00 for database 16385
+2020-05-06_07:49:08.40888 received TERM from runit, sending INT instead to force quit connections
+2020-05-06_07:49:08.49692 LOG:  received fast shutdown request
+2020-05-06_07:49:09.52050 LOG:  aborting any active transactions
+2020-05-06_07:49:09.52166 FATAL:  terminating connection due to administrator command
+2020-05-06_07:49:09.52327 FATAL:  terminating connection due to administrator command
+2020-05-06_07:49:09.52329 LOG:  worker process: logical replication launcher (PID 15013) exited with exit code 1
+2020-05-06_07:49:09.52614 LOG:  shutting down
+2020-05-06_07:49:09.67310 FATAL:  the database system is shutting down
+2020-05-06_07:49:10.67508 LOG:  database system is shut down
+2020-05-06_07:49:13.20433 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2020-05-06_07:49:13.93883 LOG:  database system was shut down at 2020-05-06 07:49:10 GMT
+2020-05-06_07:49:14.13437 LOG:  database system is ready to accept connections

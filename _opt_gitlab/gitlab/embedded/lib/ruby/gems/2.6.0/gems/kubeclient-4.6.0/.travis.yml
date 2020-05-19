@@ -1,0 +1,26 @@
+language: ruby
+sudo: false
+cache: bundler
+script: bundle exec rake $TASK
+
+os:
+  - linux
+  - osx
+rvm:
+  - "2.2.0"
+  - "2.3.0"
+  - "2.4.0"
+  - "2.5.0"
+  - "2.6.3"
+env:
+ - TASK=test
+matrix:
+  exclude:
+    - os: osx
+      rvm: "2.2.0"
+    - os: osx
+      rvm: "2.3.0"
+  include:
+    - os: linux
+      rvm: "2.5.0"
+      env: TASK=rubocop

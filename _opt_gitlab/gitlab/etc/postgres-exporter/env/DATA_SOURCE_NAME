@@ -1,0 +1,1 @@
+user=gitlab-psql host=/var/opt/gitlab/postgresql database=postgres

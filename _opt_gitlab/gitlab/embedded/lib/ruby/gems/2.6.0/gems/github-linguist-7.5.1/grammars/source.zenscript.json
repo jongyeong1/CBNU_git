@@ -1,0 +1,282 @@
+{
+  "name": "ZenScript",
+  "scopeName": "source.zenscript",
+  "patterns": [
+    {
+      "name": "constant.numeric.zenscript",
+      "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)([LlFfUuDd]|UL|ul)?\\b"
+    },
+    {
+      "include": "#code"
+    },
+    {
+      "name": "storage.type.object.array.zenscript",
+      "match": "\\b((?:[a-z]\\w*\\.)*[A-Z]+\\w*)(?=\\[)"
+    }
+  ],
+  "repository": {
+    "brackets": {
+      "patterns": [
+        {
+          "name": "keyword.other.zenscript",
+          "match": "(\u003c)\\b(.*?)(:(.*?(:(\\*|\\d+)?)?)?)(\u003e)",
+          "captures": {
+            "1": {
+              "name": "keyword.control.zenscript"
+            },
+            "2": {
+              "name": "keyword.other.zenscript"
+            },
+            "3": {
+              "name": "keyword.control.zenscript"
+            },
+            "4": {
+              "name": "variable.other.zenscript"
+            },
+            "5": {
+              "name": "keyword.control.zenscript"
+            },
+            "6": {
+              "name": "constant.numeric.zenscript"
+            },
+            "7": {
+              "name": "keyword.control.zenscript"
+            }
+          }
+        }
+      ]
+    },
+    "class": {
+      "name": "meta.class.zenscript",
+      "match": "(zenClass)\\s+(\\w+)",
+      "captures": {
+        "1": {
+          "name": "storage.type.zenscript"
+        },
+        "2": {
+          "name": "entity.name.type.class.zenscript"
+        }
+      }
+    },
+    "class-constructor": {
+      "name": "meta.class.zenscript",
+      "match": "\\b(zenConstructor)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.zenscript"
+        }
+      }
+    },
+    "code": {
+      "patterns": [
+        {
+          "include": "#class"
+        },
+        {
+          "include": "#class-constructor"
+        },
+        {
+          "include": "#functions"
+        },
+        {
+          "include": "#function-call"
+        },
+        {
+          "include": "#dots"
+        },
+        {
+          "include": "#quotes"
+        },
+        {
+          "include": "#brackets"
+        },
+        {
+          "include": "#preprocessors"
+        },
+        {
+          "include": "#comments"
+        },
+        {
+          "include": "#var"
+        },
+        {
+          "include": "#import"
+        },
+        {
+          "include": "#keywords"
+        },
+        {
+          "include": "#constants"
+        },
+        {
+          "include": "#operators"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign",
+          "match": "\\s*((#|//).*$\\n?)"
+        },
+        {
+          "name": "comment.block",
+          "begin": "\\/\\*",
+          "end": "\\*\\/",
+          "beginCaptures": {
+            "0": {
+              "name": "comment.block"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "comment.block"
+            }
+          }
+        }
+      ]
+    },
+    "constants": {
+      "name": "constant.language.zenscript",
+      "match": "\\b(true|false|null)\\b"
+    },
+    "dots": {
+      "name": "plain.text.zenscript",
+      "match": "\\b(\\w+)(\\.)(\\w+)((\\.)(\\w+))*",
+      "captures": {
+        "1": {
+          "name": "storage.type.zenscript"
+        },
+        "2": {
+          "name": "keyword.control.zenscript"
+        },
+        "5": {
+          "name": "keyword.control.zenscript"
+        }
+      }
+    },
+    "function-call": {
+      "name": "meta.function-call.zenscript",
+      "match": "(?!function)([A-Za-z_$][\\w$]*)\\s*(?=\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.zenscript"
+        }
+      }
+    },
+    "functions": {
+      "name": "meta.function.zenscript",
+      "match": "function\\s+([A-Za-z_$][\\w$]*)\\s*(?=\\()",
+      "captures": {
+        "0": {
+          "name": "storage.type.function.zenscript"
+        },
+        "1": {
+          "name": "entity.name.function.zenscript"
+        }
+      }
+    },
+    "import": {
+      "name": "meta.import.zenscript",
+      "begin": "\\b(import)\\b\\s*",
+      "end": "\\s*(;)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.other.import.zenscript"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.terminator.zenscript"
+        }
+      }
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.zenscript",
+          "match": "\\b(in|has|void|as|version|for|return|while|break|instanceof)\\b"
+        },
+        {
+          "name": "storage.type.zenscript",
+          "match": "\\b(any|bool|byte|short|int|long|float|double|string)\\b"
+        },
+        {
+          "name": "storage.type.zenscript",
+          "match": "\\b(?\u003c=(as\\s))[a-zA-Z]+\\b"
+        },
+        {
+          "name": "storage.type.function.zenscript",
+          "match": "\\b(function)\\b"
+        },
+        {
+          "name": "keyword.control.conditional.zenscript",
+          "match": "\\b(if|else)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": "(\\.\\.|\\+=|\\+|-=|-|\\*=|\\*|\\/=|\\/|%=|%|\\|=|\\||\\|\\||\u0026=|\u0026\u0026|\u0026|\\^=|\\^|\\?|:|~=|~|;|\u003c=|\u003c|\u003e=|\u003e|==|=|!=|!|\\$)"
+        }
+      ]
+    },
+    "preprocessors": {
+      "name": "constant.numeric.zenscript",
+      "match": "^(\\s*)(#)(debug|ignoreBracketErrors|norun|loader|priority|ikwid|profile|zslint|modloaded)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.control.zenscript"
+        },
+        "2": {
+          "name": "keyword.control.zenscript"
+        },
+        "3": {
+          "name": "variable.language.zenscript"
+        }
+      }
+    },
+    "quotes": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.zenscript",
+          "contentName": "string.other.zenscript",
+          "begin": "\\\"",
+          "end": "\\\"",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end"
+            }
+          }
+        },
+        {
+          "name": "string.quoted.single.zenscript",
+          "contentName": "string.other.zenscript",
+          "begin": "\\'",
+          "end": "\\'",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end"
+            }
+          }
+        }
+      ]
+    },
+    "var": {
+      "name": "storage.type",
+      "match": "\\b(var|val|static|global)\\b"
+    }
+  }
+}

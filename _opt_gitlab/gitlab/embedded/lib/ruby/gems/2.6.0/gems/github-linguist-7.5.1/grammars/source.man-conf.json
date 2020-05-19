@@ -1,0 +1,141 @@
+{
+  "name": "man.conf",
+  "scopeName": "source.man-conf",
+  "patterns": [
+    {
+      "include": "#main"
+    }
+  ],
+  "repository": {
+    "arg": {
+      "name": "constant.language.other.man-conf",
+      "match": "[^\\s:]+"
+    },
+    "bin": {
+      "name": "meta.field.${1:/downcase}.man-conf",
+      "begin": "^\\s*(MANBIN|MANPATH_MAP|MANPATH|manpath|output|_whatdb)(?=\\s)",
+      "end": "$",
+      "patterns": [
+        {
+          "include": "etc#str"
+        },
+        {
+          "include": "etc#colon"
+        },
+        {
+          "include": "#arg"
+        }
+      ],
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.operator.field.man-conf"
+        }
+      }
+    },
+    "decompressor": {
+      "name": "meta.field.decompressor.man-conf",
+      "begin": "^\\s*((\\.)[a-zA-Z0-9]+)",
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#programArgs"
+        }
+      ],
+      "beginCaptures": {
+        "1": {
+          "name": "variable.parameter.decompressor.suffix.man-conf"
+        },
+        "2": {
+          "name": "punctuation.definition.field.dot.period.full-stop.man-conf"
+        }
+      }
+    },
+    "defaultOpts": {
+      "name": "meta.field.default-options.man-conf",
+      "begin": "^\\s*(MANDEFOPTIONS)(?=\\s|$)",
+      "end": "$",
+      "patterns": [
+        {
+          "include": "source.opts"
+        }
+      ]
+    },
+    "fhs": {
+      "match": "^\\s*(FSSTND|FHS|NOAUTOPATH|NOCACHE)(?=\\s|$)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.${1:/downcase}.man-conf"
+        }
+      }
+    },
+    "main": {
+      "patterns": [
+        {
+          "include": "etc#comment"
+        },
+        {
+          "include": "#bin"
+        },
+        {
+          "include": "#fhs"
+        },
+        {
+          "include": "#programs"
+        },
+        {
+          "include": "#sections"
+        },
+        {
+          "include": "#decompressor"
+        }
+      ]
+    },
+    "programArgs": {
+      "patterns": [
+        {
+          "include": "etc#str"
+        },
+        {
+          "include": "source.opts"
+        },
+        {
+          "include": "#arg"
+        }
+      ]
+    },
+    "programs": {
+      "name": "meta.field.${1:/downcase}-path.man-conf",
+      "begin": "(?x) ^ \\s*\n(BROWSER|CAT|COL|COMPRESS_EXT|COMPRESS|CMP|EQN|GRAP|HTMLPAGER\n|JNEQN|JNROFF|NEQN|NROFF|PAGER|PIC|REFER|TBL|TROFF|VGRIND)\n(?=\\s|$)",
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#programArgs"
+        }
+      ],
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.${1:/downcase}.man-conf"
+        }
+      }
+    },
+    "sections": {
+      "name": "meta.field.mansect.man-conf",
+      "begin": "^\\s*(MANSECT)(?=\\s|$)",
+      "end": "$",
+      "patterns": [
+        {
+          "include": "etc#colon"
+        },
+        {
+          "name": "constant.numeric.section.man-conf",
+          "match": "[^:\\s]+"
+        }
+      ],
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.${1:/downcase}.man-conf"
+        }
+      }
+    }
+  }
+}

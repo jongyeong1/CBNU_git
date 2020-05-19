@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+
+require "optparse"
+require "gitlab_exporter"
+
+def main
+  clazz = GitLab::Exporter::CLI.for(ARGV.shift)
+  runner = clazz.new(ARGV)
+  runner.run
+rescue GitLab::Exporter::CLI::InvalidCLICommand => e
+  puts e
+  exit 1
+end
+
+main

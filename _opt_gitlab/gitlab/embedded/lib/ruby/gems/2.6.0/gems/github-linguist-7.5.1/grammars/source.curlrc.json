@@ -1,0 +1,180 @@
+{
+  "name": ".curlrc",
+  "scopeName": "source.curlrc",
+  "patterns": [
+    {
+      "include": "#main"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "name": "comment.line.number-sign.curlrc",
+      "begin": "^#",
+      "end": "$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment.curlrc"
+        }
+      }
+    },
+    "cookieField": {
+      "name": "meta.cookie.curlrc",
+      "match": "([^\\s=;]+)(=)([^\\s=;]*)(;)?",
+      "captures": {
+        "1": {
+          "name": "variable.assignment.cookie.name.curlrc"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "etc#eql"
+            }
+          ]
+        },
+        "3": {
+          "name": "constant.other.cookie.value.curlrc"
+        }
+      }
+    },
+    "main": {
+      "patterns": [
+        {
+          "include": "#comment"
+        },
+        {
+          "include": "#shortOptions"
+        }
+      ]
+    },
+    "separators": {
+      "patterns": [
+        {
+          "include": "etc#eql"
+        },
+        {
+          "include": "etc#colon"
+        }
+      ]
+    },
+    "shortOptions": {
+      "patterns": [
+        {
+          "match": "^(-)?([:#012346aBfgGhiIjJklLMnNOpqQRsSvV])(?=\\s|$)",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.dash.short.option.curlrc"
+            },
+            "2": {
+              "name": "entity.short.option.name.curlrc"
+            }
+          }
+        },
+        {
+          "name": "meta.option.$2.curlrc",
+          "begin": "^(-)?([cDdKoT])(\\s*=|\\s*:|\\s+)",
+          "end": "$",
+          "patterns": [
+            {
+              "include": "#string"
+            },
+            {
+              "include": "etc#bareword"
+            }
+          ],
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.dash.short.option.curlrc"
+            },
+            "2": {
+              "name": "entity.short.option.name.curlrc"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "#separators"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "meta.option.$2.curlrc",
+          "begin": "^(-)?(b)(\\s*=|\\s*:|\\s+)",
+          "end": "$",
+          "patterns": [
+            {
+              "name": "string.quoted.double.cookie-data.curlrc",
+              "begin": "\"(?=[^\"=]*=)",
+              "end": "\"|(?=$)",
+              "patterns": [
+                {
+                  "include": "#cookieField"
+                },
+                {
+                  "include": "etc#bareword"
+                }
+              ],
+              "beginCaptures": {
+                "0": {
+                  "name": "punctuation.definition.string.begin.curlrc"
+                }
+              },
+              "endCaptures": {
+                "0": {
+                  "name": "punctuation.definition.string.end.curlrc"
+                }
+              }
+            },
+            {
+              "include": "#cookieField"
+            },
+            {
+              "include": "etc#bareword"
+            }
+          ],
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.dash.short.option.curlrc"
+            },
+            "2": {
+              "name": "entity.short.option.name.curlrc"
+            },
+            "3": {
+              "patterns": [
+                {
+                  "include": "#separators"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "string": {
+      "name": "string.quoted.double.curlrc",
+      "begin": "\"",
+      "end": "\"|(?=$)",
+      "patterns": [
+        {
+          "name": "constant.character.escape.backslash.curlrc",
+          "match": "(\\\\)[\\\\\"tnrv]",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.escape.backslash.gitconfig"
+            }
+          }
+        }
+      ],
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.curlrc"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.curlrc"
+        }
+      }
+    }
+  }
+}

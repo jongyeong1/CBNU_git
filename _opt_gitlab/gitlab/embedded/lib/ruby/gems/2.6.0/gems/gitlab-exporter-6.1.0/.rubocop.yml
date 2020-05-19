@@ -1,0 +1,34 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+
+# Just use double quotes please
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Jim Weirich block style
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+# Lets not freeze all the strings by default
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/AbcSize:
+  Enabled: false
+
+# Commonly used screens these days easily fit more than 80 characters.
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 150

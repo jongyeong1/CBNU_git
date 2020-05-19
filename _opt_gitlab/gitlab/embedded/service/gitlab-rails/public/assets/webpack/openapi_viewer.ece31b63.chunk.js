@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[44],{1081:function(e,n,t){"use strict";t.r(n);t(40),t(18),t(64),t(36),t(41);var i=t(3156),a=t(14),o=t(1);n.default=function(){var e=document.getElementById("js-openapi-viewer");Promise.all([t.e(235).then(t.t.bind(null,3240,7))]).then((function(){Object(i.SwaggerUIBundle)({url:e.dataset.endpoint,dom_id:"#js-openapi-viewer"})})).catch((function(e){throw Object(a.a)(Object(o.a)("Something went wrong while initializing the OpenAPI viewer")),e}))}}}]);
+//# sourceMappingURL=openapi_viewer.ece31b63.chunk.js.map

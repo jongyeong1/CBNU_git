@@ -1,0 +1,797 @@
+{
+  "manifest_format": 2,
+  "software": {
+    "zlib": {
+      "locked_version": "cacf7f1d4e3d44d871b605da3b647f07d718623f",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/zlib.git"
+      },
+      "source_type": "git",
+      "described_version": "v1.2.11",
+      "license": "Zlib"
+    },
+    "cacerts": {
+      "locked_version": "2019.01.23",
+      "locked_source": {
+        "md5": "fccbe6cec7a76e3351ad32e305184787",
+        "url": "https://curl.haxx.se/ca/cacert-2019-01-23.pem"
+      },
+      "source_type": "url",
+      "described_version": "2019.01.23",
+      "license": "MPL-2.0"
+    },
+    "openssl": {
+      "locked_version": "36eadf1f84daa965041cce410b4ff32cbda4ef08",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/openssl.git"
+      },
+      "source_type": "git",
+      "described_version": "OpenSSL_1_1_1f",
+      "license": "OpenSSL"
+    },
+    "config_guess": {
+      "locked_version": "c9092d05347c925a26f6887980e185206e13f9d6",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/config_guess.git"
+      },
+      "source_type": "git",
+      "described_version": "c9092d05347c925a26f6887980e185206e13f9d6",
+      "license": "GPL-3.0 (with exception)"
+    },
+    "libtool": {
+      "locked_version": "2.4.6",
+      "locked_source": {
+        "sha256": "e3bd4d5d3d025a36c21dd6af7ea818a2afcd4dfc1ea5a17b39d7854bcd0c06e3",
+        "url": "https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "2.4.6",
+      "license": "GPL-2.0"
+    },
+    "curl": {
+      "locked_version": "4d6bd91ab33328c6d27eddc32e064defc02dc4fd",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/curl.git"
+      },
+      "source_type": "git",
+      "described_version": "curl-7_59_0",
+      "license": "MIT"
+    },
+    "ncurses": {
+      "locked_version": "5.9",
+      "locked_source": {
+        "md5": "8cb9c412e5f2d96bc6f459aa8c6282a1",
+        "url": "http://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "5.9",
+      "license": "MIT"
+    },
+    "libedit": {
+      "locked_version": "20120601-3.0",
+      "locked_source": {
+        "md5": "e50f6a7afb4de00c81650f7b1a0f5aea",
+        "url": "http://www.thrysoee.dk/editline/libedit-20120601-3.0.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "20120601-3.0",
+      "license": "BSD-3-Clause"
+    },
+    "pcre2": {
+      "locked_version": "10.34",
+      "locked_source": {
+        "md5": "e3e15cca49557a9c07a21dde2da05ea5",
+        "url": "http://downloads.sourceforge.net/project/pcre/pcre2/10.34/pcre2-10.34.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "10.34",
+      "license": "BSD-2-Clause"
+    },
+    "libiconv": {
+      "locked_version": "1.15",
+      "locked_source": {
+        "url": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.15.tar.gz",
+        "sha256": "ccf536620a45458d26ba83887a983b96827001e92a13847b45e4925cc8913178"
+      },
+      "source_type": "url",
+      "described_version": "1.15",
+      "license": "LGPL-2.1"
+    },
+    "redis": {
+      "locked_version": "4891612bb5164bdf9bc2d931472aaa13174fc8c3",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/redis.git"
+      },
+      "source_type": "git",
+      "described_version": "5.0.7",
+      "license": "BSD-3-Clause"
+    },
+    "pcre": {
+      "locked_version": "8.42",
+      "locked_source": {
+        "md5": "fc18afa0f14a25475cf097ee102a3e4f",
+        "url": "http://downloads.sourceforge.net/project/pcre/pcre/8.42/pcre-8.42.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "8.42",
+      "license": "BSD-2-Clause"
+    },
+    "nginx-module-vts": {
+      "locked_version": "d6aead19ab52834ad748f14dc536b9128ee22372",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/nginx-module-vts.git"
+      },
+      "source_type": "git",
+      "described_version": "v0.1.18",
+      "license": "BSD-2-Clause"
+    },
+    "libffi": {
+      "locked_version": "3.2.1",
+      "locked_source": {
+        "md5": "83b89587607e3eb65c70d361f13bab43",
+        "url": "ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "3.2.1",
+      "license": "MIT"
+    },
+    "libyaml": {
+      "locked_version": "0.1.7",
+      "locked_source": {
+        "sha256": "8088e457264a98ba451a90b8661fcb4f9d6f478f7265d48322a196cec2480729",
+        "url": "http://pyyaml.org/download/libyaml/yaml-0.1.7.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "0.1.7",
+      "license": "MIT"
+    },
+    "ruby": {
+      "locked_version": "2.6.5",
+      "locked_source": {
+        "sha256": "66976b716ecc1fd34f9b7c3c2b07bbd37631815377a2e3e85a5b194cfdcbed7d",
+        "url": "https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.5.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "2.6.5",
+      "license": "BSD-2-Clause"
+    },
+    "rubygems": {
+      "locked_version": "2.7.10",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "2.7.10",
+      "license": "MIT"
+    },
+    "rb-readline": {
+      "locked_version": "9fba246073f78831b7c7129c76cc07d8476a8892",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/rb-readline.git"
+      },
+      "source_type": "git",
+      "described_version": "master",
+      "license": "BSD-3-Clause"
+    },
+    "popt": {
+      "locked_version": "1.16",
+      "locked_source": {
+        "url": "https://ftp.openbsd.org/pub/OpenBSD/distfiles/popt-1.16.tar.gz",
+        "md5": "3743beefa3dd6247a73f8f7a32c14c33"
+      },
+      "source_type": "url",
+      "described_version": "1.16",
+      "license": "MIT"
+    },
+    "grafana": {
+      "locked_version": "6.3.5",
+      "locked_source": {
+        "url": "https://dl.grafana.com/oss/release/grafana-6.3.5.linux-amd64.tar.gz",
+        "sha256": "0104bfe14444cea2fa3f021b9a75fc78f66434f2ca8f3d0bdd422d108ce682e7"
+      },
+      "source_type": "url",
+      "described_version": "6.3.5",
+      "license": "APACHE-2.0"
+    },
+    "libossp-uuid": {
+      "locked_version": "1.6.2",
+      "locked_source": {
+        "md5": "5db0d43a9022a6ebbbc25337ae28942f",
+        "url": "https://www.mirrorservice.org/sites/ftp.ossp.org/pkg/lib/uuid/uuid-1.6.2.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "1.6.2",
+      "license": "MIT"
+    },
+    "postgresql": {
+      "locked_version": "10.12",
+      "locked_source": {
+        "sha256": "388f7f888c4fbcbdf424ec2bce52535195b426010b720af7bea767e23e594ae7",
+        "url": "https://ftp.postgresql.org/pub/source/v10.12/postgresql-10.12.tar.bz2"
+      },
+      "source_type": "url",
+      "described_version": "10.12",
+      "license": "PostgreSQL"
+    },
+    "bundler": {
+      "locked_version": "1.17.3",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "1.17.3",
+      "license": "MIT"
+    },
+    "omnibus-ctl": {
+      "locked_version": "1b96ac486636cac987e5b464810bb3ff673a93fe",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/omnibus-ctl.git"
+      },
+      "source_type": "git",
+      "described_version": "1b96ac486636cac987e5b464810bb3ff673a93fe",
+      "license": "Apache-2.0"
+    },
+    "acme-client": {
+      "locked_version": "2.0.6",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "2.0.6",
+      "license": "MIT"
+    },
+    "compat_resource": {
+      "locked_version": "e36200f6b804915b68a4ce74c8b7a293c041d9fe",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/compat_resource.git"
+      },
+      "source_type": "git",
+      "described_version": "v12.19.1",
+      "license": "Apache-2.0"
+    },
+    "pkg-config-lite": {
+      "locked_version": "0.28-1",
+      "locked_source": {
+        "md5": "61f05feb6bab0a6bbfab4b6e3b2f44b6",
+        "url": "http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "0.28-1",
+      "license": "GPL-2.0"
+    },
+    "liblzma": {
+      "locked_version": "5.2.4",
+      "locked_source": {
+        "url": "http://tukaani.org/xz/xz-5.2.4.tar.gz",
+        "sha256": "b512f3b726d3b37b6dc4c8570e137b9311e7552e8ccbab4d39d47ce5f4177145"
+      },
+      "source_type": "url",
+      "described_version": "5.2.4",
+      "license": "Public-Domain"
+    },
+    "libxml2": {
+      "locked_version": "2.9.9",
+      "locked_source": {
+        "md5": "c04a5a0a042eaa157e8e8c9eabe76bd6",
+        "url": "ftp://xmlsoft.org/libxml2/libxml2-2.9.9.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "2.9.9",
+      "license": "MIT"
+    },
+    "libxslt": {
+      "locked_version": "1.1.32",
+      "locked_source": {
+        "md5": "1fc72f98e98bf4443f1651165f3aa146",
+        "url": "ftp://xmlsoft.org/libxml2/libxslt-1.1.32.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "1.1.32",
+      "license": "MIT"
+    },
+    "rsync": {
+      "locked_version": "3.1.3",
+      "locked_source": {
+        "md5": "1581a588fde9d89f6bc6201e8129afaf",
+        "url": "https://rsync.samba.org/ftp/rsync/src/rsync-3.1.3.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "3.1.3",
+      "license": "GPL v3"
+    },
+    "libicu": {
+      "locked_version": "0c5873f89bf64f6bbc0a24b84f07d79b25785a42",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/libicu.git"
+      },
+      "source_type": "git",
+      "described_version": "release-57-1",
+      "license": "MIT"
+    },
+    "postgresql_old": {
+      "locked_version": "9.6.17",
+      "locked_source": {
+        "sha256": "f6e1e32d32545f97c066f3c19f4d58dfab1205c01252cf85c5c92294ace1a0c2",
+        "url": "https://ftp.postgresql.org/pub/source/v9.6.17/postgresql-9.6.17.tar.bz2"
+      },
+      "source_type": "url",
+      "described_version": "9.6.17",
+      "license": "PostgreSQL"
+    },
+    "postgresql_new": {
+      "locked_version": "11.7",
+      "locked_source": {
+        "sha256": "324ae93a8846fbb6a25d562d271bc441ffa8794654c5b2839384834de220a313",
+        "url": "https://ftp.postgresql.org/pub/source/v11.7/postgresql-11.7.tar.bz2"
+      },
+      "source_type": "url",
+      "described_version": "11.7",
+      "license": "PostgreSQL"
+    },
+    "bzip2": {
+      "locked_version": "1.0.6",
+      "locked_source": {
+        "md5": "00b516f4704d4a7cb50a1d97e6e8e15b",
+        "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.6.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "1.0.6",
+      "license": "BSD-2-Clause"
+    },
+    "python3": {
+      "locked_version": "3.7.3",
+      "locked_source": {
+        "url": "https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz",
+        "sha256": "d62e3015f2f89c970ac52343976b406694931742fbde2fed8d1ce8ebb4e1f8ff"
+      },
+      "source_type": "url",
+      "described_version": "3.7.3",
+      "license": "Python-2.0"
+    },
+    "python-docutils": {
+      "locked_version": "0.13.1",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "0.13.1",
+      "license": "Public-Domain"
+    },
+    "krb5": {
+      "locked_version": "6c672cf5df8771833c2eb03db1671cfd0e2e4a13",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/krb5.git"
+      },
+      "source_type": "git",
+      "described_version": "krb5-1.17",
+      "license": "MIT"
+    },
+    "registry": {
+      "locked_version": "53716ca06a55bebec755a7b2412a9ccce49f5060",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/container-registry.git"
+      },
+      "source_type": "git",
+      "described_version": "v2.8.2-gitlab",
+      "license": "Apache-2.0"
+    },
+    "gitlab-pages": {
+      "locked_version": "52b28999916a20b27c5caa6c399d871c22d146ca",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/gitlab-pages.git"
+      },
+      "source_type": "git",
+      "described_version": "v1.17.0",
+      "license": "MIT"
+    },
+    "unzip": {
+      "locked_version": "6.0",
+      "locked_source": {
+        "url": "https://managedway.dl.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz",
+        "sha256": "036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37"
+      },
+      "source_type": "url",
+      "described_version": "6.0",
+      "license": "Info-ZIP"
+    },
+    "libre2": {
+      "locked_version": "7436831ef39b89b3a2ea50be91cf09732a900239",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/libre2.git"
+      },
+      "source_type": "git",
+      "described_version": "2016-02-01",
+      "license": "BSD"
+    },
+    "libgpg-error": {
+      "locked_version": "1.32",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.32.tar.bz2",
+        "sha256": "c345c5e73cc2332f8d50db84a2280abfb1d8f6d4f1858b9daa30404db44540ca"
+      },
+      "source_type": "url",
+      "described_version": "1.32",
+      "license": "LGPL-2.1"
+    },
+    "libassuan": {
+      "locked_version": "2.5.1",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.1.tar.bz2",
+        "sha256": "47f96c37b4f2aac289f0bc1bacfa8bd8b4b209a488d3d15e2229cb6cc9b26449"
+      },
+      "source_type": "url",
+      "described_version": "2.5.1",
+      "license": "LGPL-2.1"
+    },
+    "npth": {
+      "locked_version": "1.6",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2",
+        "sha256": "1393abd9adcf0762d34798dc34fdcf4d0d22a8410721e76f1e3afcd1daa4e2d1"
+      },
+      "source_type": "url",
+      "described_version": "1.6",
+      "license": "LGPL-2.1"
+    },
+    "libgcrypt": {
+      "locked_version": "1.8.3",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.3.tar.bz2",
+        "sha256": "66ec90be036747602f2b48f98312361a9180c97c68a690a5f376fa0f67d0af7c"
+      },
+      "source_type": "url",
+      "described_version": "1.8.3",
+      "license": "LGPL-2.1"
+    },
+    "libksba": {
+      "locked_version": "1.3.5",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.3.5.tar.bz2",
+        "sha256": "41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340"
+      },
+      "source_type": "url",
+      "described_version": "1.3.5",
+      "license": "LGPL-3"
+    },
+    "gnupg": {
+      "locked_version": "2.2.10",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.10.tar.bz2",
+        "sha256": "799dd37a86a1448732e339bd20440f4f5ee6e69755f6fd7a73ee8af30840c915"
+      },
+      "source_type": "url",
+      "described_version": "2.2.10",
+      "license": "LGPL-2.1"
+    },
+    "gpgme": {
+      "locked_version": "1.10.0",
+      "locked_source": {
+        "url": "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.10.0.tar.bz2",
+        "sha256": "1a8fed1197c3b99c35f403066bb344a26224d292afc048cfdfc4ccd5690a0693"
+      },
+      "source_type": "url",
+      "described_version": "1.10.0",
+      "license": "LGPL-2.1"
+    },
+    "libpng": {
+      "locked_version": "a40189cf881e9f0db80511c382292a5604c3c3d1",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/libpng.git"
+      },
+      "source_type": "git",
+      "described_version": "v1.6.37",
+      "license": "Libpng"
+    },
+    "graphicsmagick": {
+      "locked_version": "1.3.34",
+      "locked_source": {
+        "url": "https://ftp.icm.edu.pl/pub/unix/graphics/GraphicsMagick/1.3/GraphicsMagick-1.3.34.tar.gz",
+        "sha256": "4717f7a32d964c515d83706fd52d34e089c2ffa35f8fbf43c923ce19343cf2f4"
+      },
+      "source_type": "url",
+      "described_version": "1.3.34",
+      "license": "MIT"
+    },
+    "exiftool": {
+      "locked_version": "654e94a1eaf54d3084a2b3dadb5a366e271e9f6b",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/exiftool.git"
+      },
+      "source_type": "git",
+      "described_version": "11.70",
+      "license": "GPL-1.0 or Artistic"
+    },
+    "git": {
+      "locked_version": "2.24.1",
+      "locked_source": {
+        "url": "https://www.kernel.org/pub/software/scm/git/git-2.24.1.tar.gz",
+        "sha256": "ad5334956301c86841eb1e5b1bb20884a6bad89a10a6762c958220c7cf64da02"
+      },
+      "source_type": "url",
+      "described_version": "2.24.1",
+      "license": "GPL-2.0"
+    },
+    "jemalloc": {
+      "locked_version": "ea6b3e973b477b8061e0076bb257dbd7f3faa756",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/jemalloc.git"
+      },
+      "source_type": "git",
+      "described_version": "5.2.1",
+      "license": "jemalloc"
+    },
+    "nginx": {
+      "locked_version": "1.16.1",
+      "locked_source": {
+        "sha256": "f11c2a6dd1d3515736f0324857957db2de98be862461b5a542a3ac6188dbe32b",
+        "url": "http://nginx.org/download/nginx-1.16.1.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "1.16.1",
+      "license": "BSD-2-Clause"
+    },
+    "mixlib-log": {
+      "locked_version": "3.0.1",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "3.0.1",
+      "license": "Apache-2.0"
+    },
+    "chef-zero": {
+      "locked_version": "14.0.13",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "14.0.13",
+      "license": "Apache-2.0"
+    },
+    "awesome_print": {
+      "locked_version": "1.8.0",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "1.8.0",
+      "license": "MIT"
+    },
+    "ohai": {
+      "locked_version": "14.14.0",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "14.14.0",
+      "license": "Apache-2.0"
+    },
+    "chef-gem": {
+      "locked_version": "14.14.29",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "14.14.29",
+      "license": "Apache-2.0"
+    },
+    "remote-syslog": {
+      "locked_version": "1.6.15",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "1.6.15",
+      "license": "MIT"
+    },
+    "logrotate": {
+      "locked_version": "35f99041bd8b68a89fc314d9dedaf18aa9c5743a",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/logrotate.git"
+      },
+      "source_type": "git",
+      "described_version": "3.15.1",
+      "license": "GPL-2.0"
+    },
+    "runit": {
+      "locked_version": "2.1.2",
+      "locked_source": {
+        "md5": "6c985fbfe3a34608eb3c53dc719172c4",
+        "url": "http://smarden.org/runit/runit-2.1.2.tar.gz"
+      },
+      "source_type": "url",
+      "described_version": "2.1.2",
+      "license": "BSD-3-Clause"
+    },
+    "go-crond": {
+      "locked_version": "5e4bc8f41fba5494d9c2143e58e9471c82e7fe65",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/go-crond.git"
+      },
+      "source_type": "git",
+      "described_version": "0.6.1",
+      "license": "BSD-2-Clause"
+    },
+    "docker-distribution-pruner": {
+      "locked_version": "7cf07e0fcd8b478ec223db9ef4ab68a3c0619859",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/docker-distribution-pruner.git"
+      },
+      "source_type": "git",
+      "described_version": "v0.1.0",
+      "license": "MIT"
+    },
+    "mattermost": {
+      "locked_version": "5.20.2",
+      "locked_source": {
+        "url": "https://releases.mattermost.com/5.20.2/mattermost-team-5.20.2-linux-amd64.tar.gz",
+        "md5": "2b46e3dc24e4d74725b78aa5778b3b75"
+      },
+      "source_type": "url",
+      "described_version": "5.20.2",
+      "license": "MIT with Trademark Protection"
+    },
+    "prometheus": {
+      "locked_version": "6f92ce56053866194ae5937012c1bec40f1dd1d9",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/prometheus.git"
+      },
+      "source_type": "git",
+      "described_version": "v2.13.1",
+      "license": "APACHE-2.0"
+    },
+    "alertmanager": {
+      "locked_version": "f74be0400a6243d10bb53812d6fa408ad71ff32d",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/alertmanager.git"
+      },
+      "source_type": "git",
+      "described_version": "v0.20.0",
+      "license": "APACHE-2.0"
+    },
+    "grafana-dashboards": {
+      "locked_version": "c742a287a6b7cbed8f2e55d41efd69794b09de9f",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/grafana-dashboards.git"
+      },
+      "source_type": "git",
+      "described_version": "v1.3.0",
+      "license": "MIT"
+    },
+    "node-exporter": {
+      "locked_version": "3db77732e925c08f675d7404a8c46466b2ece83e",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/node_exporter.git"
+      },
+      "source_type": "git",
+      "described_version": "v0.18.1",
+      "license": "APACHE-2.0"
+    },
+    "redis-exporter": {
+      "locked_version": "14dda66e724e45935782db610aca803594107ff0",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/redis_exporter.git"
+      },
+      "source_type": "git",
+      "described_version": "v1.3.5",
+      "license": "MIT"
+    },
+    "postgres-exporter": {
+      "locked_version": "aeec47ead4ad3941cf1b6588b1ac5a44ca9e9c4b",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/postgres_exporter.git"
+      },
+      "source_type": "git",
+      "described_version": "v0.8.0",
+      "license": "Apache-2.0"
+    },
+    "gitlab-exporter": {
+      "locked_version": "6.1.0",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "6.1.0",
+      "license": "MIT"
+    },
+    "gitlab-workhorse": {
+      "locked_version": "7edfe8beeacbd32ded50bdbd187cbe08dbd6b565",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/gitlab-workhorse.git"
+      },
+      "source_type": "git",
+      "described_version": "v8.25.2",
+      "license": "MIT"
+    },
+    "gitlab-shell": {
+      "locked_version": "b920520599142435ce06ad155099544adc923618",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/gitlab-shell.git"
+      },
+      "source_type": "git",
+      "described_version": "v12.0.0",
+      "license": "MIT"
+    },
+    "gitlab-ctl": {
+      "locked_version": null,
+      "locked_source": {
+        "path": "/builds/gitlab/omnibus-gitlab/files/gitlab-ctl-commands"
+      },
+      "source_type": "path",
+      "described_version": null,
+      "license": "Apache-2.0"
+    },
+    "gitlab-psql": {
+      "locked_version": "7e11364159031db0eb55867ad3d5713b",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "7e11364159031db0eb55867ad3d5713b",
+      "license": "Apache-2.0"
+    },
+    "gitlab-healthcheck": {
+      "locked_version": "90e6447aeead4a29ac9fffc15945ce6b",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "90e6447aeead4a29ac9fffc15945ce6b",
+      "license": "Apache-2.0"
+    },
+    "gitlab-cookbooks": {
+      "locked_version": null,
+      "locked_source": {
+        "path": "/builds/gitlab/omnibus-gitlab/files/gitlab-cookbooks"
+      },
+      "source_type": "path",
+      "described_version": null,
+      "license": "Apache-2.0"
+    },
+    "chef-acme": {
+      "locked_version": "c0f781dbce1718f73aa5f479b2aa55d6d501a95e",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:omnibus-mirror/chef-acme.git"
+      },
+      "source_type": "git",
+      "described_version": "v4.1.1",
+      "license": "Apache-2.0"
+    },
+    "gitlab-selinux": {
+      "locked_version": null,
+      "locked_source": {
+        "path": "/builds/gitlab/omnibus-gitlab/files/gitlab-selinux"
+      },
+      "source_type": "path",
+      "described_version": null,
+      "license": "Apache-2.0"
+    },
+    "gitlab-scripts": {
+      "locked_version": null,
+      "locked_source": {
+        "path": "/builds/gitlab/omnibus-gitlab/files/gitlab-scripts"
+      },
+      "source_type": "path",
+      "described_version": null,
+      "license": "Apache-2.0"
+    },
+    "gitlab-config-template": {
+      "locked_version": null,
+      "locked_source": {
+        "path": "/builds/gitlab/omnibus-gitlab/files/gitlab-config-template"
+      },
+      "source_type": "path",
+      "described_version": null,
+      "license": "Apache-2.0"
+    },
+    "package-scripts": {
+      "locked_version": "12.9.3+ce.0",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "12.9.3+ce.0",
+      "license": "Apache-2.0"
+    },
+    "gitlab-rails": {
+      "locked_version": "571e31b8362a6903c97c5d42f2211151941a7cd3",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/gitlabhq.git"
+      },
+      "source_type": "git",
+      "described_version": "v12.9.3",
+      "license": "MIT"
+    },
+    "gitaly": {
+      "locked_version": "d6c8a3d730ebb1f00572914e502285fd7729ead3",
+      "locked_source": {
+        "git": "git@dev.gitlab.org:gitlab/gitaly"
+      },
+      "source_type": "git",
+      "described_version": "v12.9.3",
+      "license": "MIT"
+    },
+    "version-manifest": {
+      "locked_version": "0.0.1",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "0.0.1",
+      "license": "project_license"
+    }
+  },
+  "build_version": "12.9.3",
+  "build_git_revision": "43e3c090d53f7f315c4309e361d3c2f08af53e52",
+  "license": "MIT"
+}

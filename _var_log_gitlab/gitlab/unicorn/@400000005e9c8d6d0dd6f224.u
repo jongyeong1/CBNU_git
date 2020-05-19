@@ -1,0 +1,16 @@
+2020-04-19_15:05:05.92559 starting new unicorn master
+2020-04-19_06:07:56.25342 adopted new unicorn master 14908
+2020-04-19_07:54:59.44657 Received TERM from runit, sending to process group (-PID)
+2020-04-19_07:54:59.81542 Terminated
+2020-04-19_07:54:59.81544 forwarding TERM to unicorn master 14908
+2020-04-19_07:54:59.81626 Waiting for unicorn to die...
+2020-04-19_07:55:00.82051 Waiting for unicorn to die...
+2020-04-19_07:55:01.82328 Waiting for unicorn to die...
+2020-04-19_07:55:02.83735 Waiting for unicorn to die...
+2020-04-19_07:55:03.83956 Waiting for unicorn to die...
+2020-04-19_07:55:04.84222 Forcibly killing unicorn
+2020-04-19_07:55:04.97189 forwarding CONT to unicorn master 14908
+2020-04-19_07:55:04.97191 /opt/gitlab/embedded/bin/gitlab-unicorn-wrapper: line 132: kill: (14908) - No such process
+2020-04-19_07:55:04.98892 wrapper for unicorn master 14908 exiting
+2020-04-19_07:55:06.10395 starting new unicorn master
+2020-04-19_07:56:35.48966 adopted new unicorn master 29977
