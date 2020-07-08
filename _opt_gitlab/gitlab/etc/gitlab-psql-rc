@@ -1,5 +1,0 @@
-psql_user='gitlab-psql'
-psql_group='gitlab-psql'
-psql_host='/var/opt/gitlab/postgresql'
-psql_port='5432'
-psql_dbname='gitlabhq_production'

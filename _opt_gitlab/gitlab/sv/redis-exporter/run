@@ -1,8 +1,0 @@
-#!/bin/sh
-exec 2>&1
-
-umask 077
-exec chpst -P -e /opt/gitlab/etc/redis-exporter/env \
-  -U gitlab-redis:git \
-  -u gitlab-redis:git \
-  /opt/gitlab/embedded/bin/redis_exporter --web.listen-address=localhost:9121 --redis.addr=unix:///var/opt/gitlab/redis/redis.socket

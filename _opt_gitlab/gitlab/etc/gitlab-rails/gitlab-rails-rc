@@ -1,5 +1,0 @@
-gitlab_user='git'
-gitlab_group='git'
-registry_dir=''
-registry_user='registry'
-registry_group='registry'
